@@ -1,0 +1,201 @@
+{
+  "projects": [
+    {
+      "title": "Cv en ligne",
+      "shortDescription": "Ce projet que vous consultez, a été réalisé afin de développer mes compréhesions en déploiement via Docker et Kubernetes.",
+      "details": "Mise en place d'une **architecture complète** composée :\n\n* d’un **frontend en VueJS**, avec **Tailwind CSS** pour une interface responsive\n* d’un **backend en Spring Boot**, assurant la logique métier\n\nLes deux services sont :\n\n* **Conteneurisés avec Docker**\n* **Déployés sur un cluster Kubernetes**, permettant d’adopter les bonnes pratiques en environnement distribué\n\n **Fonctionnalités clés** :\n\n* Diffusion de **flux vidéo** depuis le backend\n\n\n **Compétences développées** :\n\n* Développement **web fullstack** : VueJS, Spring Boot\n* **Conteneurisation** : Docker\n* **Orchestration** : Kubernetes\n Utilisation de **framework CSS utilitaires** comme Tailwind CSS",
+      "showDetails": false,
+      "detailImages": [
+        "/images/techno/Vuejs.png",
+        "/images/techno/Spring.png",
+        "/images/techno/Docker.png",
+        "/images/techno/Kubernetes.png",
+        "/images/techno/nginx.png"
+      ],
+      "technologies": ["Vuejs", "Spring", "Docker", "Kubernetes", "Nginx"],
+      "card": {
+        "image": "/images/projets/cv.png",
+        "description": "Capture d'écran du site"
+      },
+      "github": [
+        "https://github.com/MariusBoucard/cv-frontend",
+        "https://github.com/MariusBoucard/cv-backend"
+      ]
+    },
+    {
+      "title": "Virtual Amplifier NAM (VST)",
+      "shortDescription": "Plugin audio utilisant JUCE et intégrant le framework Neural Amp Modeler afin de modéliser un ampli virtuel. Le but de ce projet est de fournir une implémentation isofeature du plugin NAM en utilisant JUCE comme Framework graphique à la communauté.",
+      "details": "Développement d’un plugin audio d’amplification virtuelle à l’aide du framework **JUCE**, reposant sur le moteur open source **Neural Amp Modeler**. Le plugin permet de charger différents modèles d’amplis neuronaux compatibles avec l’architecture du framework d’origine. Il prend également en charge l'importation de réponses impulsionnelles (**IR**), utilisées pour simuler des cabinets de haut-parleurs ou des effets de réverbération.\n\nUne section de filtres paramétriques simples permet d’appliquer une égalisation sommaire du signal audio. L’interface graphique a été conçue en **3D avec Blender**, puis intégrée au plugin pour une présentation visuelle personnalisée.\n\n### Ce projet a permis de :\n\n- Réaliser un proof of concept de plugin audio avec **JUCE** ;\n- Approcher les bases du traitement numérique du signal audio ;\n- Concevoir une architecture modulable pour expérimenter différentes chaînes de traitement audio ;\n- Acquérir les fondamentaux de la modélisation **3D avec Blender**.",
+      "showDetails": false,
+
+      "technologies": ["JUCE", "C++", "CMake", "Blender"],
+      "detailImages": [
+        "/images/techno/Cpp.png",
+        "/images/techno/JUCE.png",
+        "/images/techno/Cmake.png",
+        "/images/techno/blender.png"
+      ],
+
+      "card": {
+        "image": "/images/projets/amp.png",
+        "description": "Interface de l'ampli"
+      },
+      "github": "https://github.com/MariusBoucard/GainPlugin"
+    },
+    {
+      "title": "Geiger Noise Generator (VST)",
+      "shortDescription": "Plugin audio en C++ ajoutant des artefacts au signal audio. En explorant la modélisation sonore, pour reproduire le bruit d'un compteur geiger.",
+      "details": "Basé sur l'architecture modulaire développée avec JUCE\n* Interface graphique **3D avec Blender**\n* Intégration de **filtres simples** pour le traitement du signal\n\n **Algorithme sonore** :\n\n* Utilise un **modèle exponentiel** simulant des événements aléatoires\n* Génère un **bruit probabiliste** fidèle à un détecteur Geiger\n\n---\n\n#### Ce projet a permis de :\n\n* Réutiliser une architecture **JUCE** dans un nouveau contexte\n* Expérimenter la **synthèse sonore probabiliste**\n* Renforcer les compétences en **traitement du signal** et **interface 3D**",
+      "showDetails": false,
+      "detailImages": [
+        "/images/techno/Cpp.png",
+        "/images/techno/JUCE.png",
+        "/images/techno/Cmake.png",
+        "/images/techno/blender.png"
+      ],
+      "technologies": ["JUCE", "C++", "CMake", "Blender"],
+      "extraContent": {
+        "soundDry": "/api/audio?name=geigerless.mp3&type=dry",
+        "soundWet": "/api/audio?name=geiger.mp3&type=wet",
+        "label": "Test compteur Geiger / BitCrusher"
+      },
+      "card": {
+        "image": "/images/projets/geiger.png",
+        "description": "Compteur Geiger"
+      },
+      "github": "https://github.com/MariusBoucard/BitCrusher"
+    },
+    {
+      "title": "L'agrafe Journal",
+      "shortDescription": "Site internet doté d'un backend ainsi que d'une page admin permettant à l'équipe de rédaction du journal d'ajouter leurs propres contenus.",
+      "details": "### **L'agrafe Journal**\n\nConception et développement d’un **site web éditorial** pour l’association L’Agrafe (Université Rennes 2) :\n\n**Architecture** :\n\n* Frontend : **VueJS**\n* Backend : **ExpressJS**\n* Proxy : **NGINX**\n* Hébergement : VM chez **Blue Ocean**\n\n**Fonctionnalités** :\n\n* Espace d’**administration personnalisé**\n* Gestion autonome des contenus par des rédacteurs non techniques\n* Migration depuis un prototype **Flask** vers une solution **robuste et modulaire**\n\n---\n\n####  Ce projet a permis de :\n\n* Concevoir une **architecture fullstack éditoriale**\n* Mettre en œuvre un **déploiement sur Linux + NGINX**\n* Travailler avec des utilisateurs **non techniques**\n* Gérer une **migration technologique** pour améliorer l’évolutivité",
+      "showDetails": false,
+      "detailImages": [
+        "/images/techno/Vuejs.png",
+        "/images/techno/Docker.png",
+        "/images/techno/Express.png",
+        "/images/techno/nginx.png"
+      ],
+      "technologies": ["Vuejs", "Docker", "Express", "Nginx"],
+      "extraContent": {
+        "image": "/images/projets/agrafe.png",
+        "links": ["https://lagrafejournal.com"]
+      },
+      "card": {
+        "image": "/images/projets/agrafesite.png",
+        "description": "Site de l'Agrafe"
+      },
+      "github": [
+        "https://github.com/MariusBoucard/agrafeFrontend",
+        "https://github.com/MariusBoucard/agrafeBackend"
+      ]
+    },
+    {
+      "title": "Our Journey",
+      "shortDescription": "Site personnel regroupant l'ensemble des chansons sur lesquelles nous avons pu travailler avec des amis.",
+      "details": "**Développement** d’un site personnel visant à **centraliser** et **archiver** des **compositions musicales** réalisées en collaboration. Le site repose sur une architecture **VueJS** (frontend) et **ExpressJS** (backend), avec une base de données **MySQL** pour la gestion des contenus. Cette structure, héritée du projet **_L’Agrafe_**, assure une **cohérence technique** et une bonne **maintenabilité**.\n\nL’interface permet de :\n- **Parcourir** les morceaux,\n- **Consulter** leurs détails,\n- Accéder à l’ensemble des compositions via une **bibliothèque centralisée**.\n\n### Ce projet a permis de :\n- **Réutiliser** une architecture fullstack éprouvée (**VueJS**, **ExpressJS**, **MySQL**) ;\n- **Concevoir** un système d’**archivage structuré** pour contenus musicaux ;\n- **Approfondir** l’utilisation de bases de données relationnelles dans un contexte applicatif simple.",
+      "showDetails": false,
+
+      "extraContent": { "links": ["https://ourjourney.fr"] },
+      "detailImages": [
+        "/images/techno/Vuejs.png",
+        "/images/techno/Docker.png",
+        "/images/techno/Express.png",
+        "/images/techno/nginx.png"
+      ],
+      "technologies": ["Vuejs", "Docker", "Express", "Nginx"],
+      "card": {
+        "image": "/images/projets/ourjourney.png",
+        "description": "Page d'accueil de ourjourney.fr"
+      },
+      "github": "https://github.com/MariusBoucard/ourJourney"
+    },
+    {
+      "title": "Guitar Course App",
+      "shortDescription": "Application web wrappée dans Electon. Fourni les ressources nécessaires à mon apprentissage de la guitare",
+      "details": "Développement d’une application desktop dédiée à la pratique et à la composition à la guitare, construite avec VueJS et empaquetée avec Electron pour un déploiement multiplateforme.\nL’application intègre plusieurs outils d’assistance musicale : visualisation du manche et de ses notes, chargement local de vidéos, création de playlists personnalisées pour structurer les sessions de travail.\n\nPensée comme un support quotidien, l’application facilite un entraînement régulier et ciblé, tout en servant d’environnement centralisé pour l’exploration musicale et la composition.\n\nCe projet a permis de :\n\n* Mettre en œuvre VueJS dans un contexte desktop via Electron ;\n* Concevoir une interface orientée utilisateur avec gestion locale de fichiers multimédia ;\n* Créer un outil d’assistance musicale personnalisé, adapté à une pratique instrumentale régulière.",
+      "showDetails": false,
+      "extraContent": null,
+      "detailImages": ["/images/techno/Vuejs.png", "/images/techno/Electron.png"],
+      "technologies": ["Vuejs", "Electron"],
+      "card": {
+        "image": "/images/projets/guitarApp.png",
+        "description": "Capture d'écran de l'appli."
+      },
+      "github": "https://github.com/MariusBoucard/guitarapp"
+    },
+    {
+      "title": "Script App",
+      "shortDescription": "Une application web déployée avec electron pour la rédaction de scénarios audiovisuels.",
+      "details": "Face à l’inefficacité des outils classiques de bureautique pour la rédaction de scénarios, une application web en VueJS a été développée en 35 heures pour répondre spécifiquement aux besoins d’un tournage de clip vidéo.\nL’interface, pensée pour la fluidité et la structuration du texte, a permis la rédaction d’un script de 20 pages en moins de 5 heures, contre un temps bien plus long estimé avec des solutions non spécialisées.\n\nCe projet a permis de :\n\n* Concevoir un outil léger et ciblé pour la rédaction de scripts audiovisuels ;\n* Utiliser VueJS dans un développement rapide et agile ;\n* Déployer l'application en utilisant Electron.",
+      "showDetails": false,
+      "extraContent": null,
+      "technologies": ["Vuejs", "Electron"],
+      "detailImages": ["/images/techno/Vuejs.png", "/images/techno/Electron.png"],
+      "card": {
+        "image": "/images/projets/scriptGenerator.png",
+        "description": ""
+      },
+      "github": "https://github.com/MariusBoucard/scriptgenerator"
+    },
+    {
+      "title": "Nextcloud",
+      "shortDescription": "Infrastructure hebergée sur un raspberry pi.",
+      "details": "Mise en place d’une instance auto-hébergée de Nextcloud sur Raspberry Pi, orchestrée via Docker.\nCe projet vise à garder un contrôle total sur les données personnelles, en remplaçant des solutions propriétaires comme Google Drive ou Microsoft OneDrive par une alternative libre et locale.\nL’installation a nécessité des connaissances réseau, notamment la gestion des ports et de la sécurité de base.\n\nCe projet a permis de :\n\n* Expérimenter l’auto-hébergement de services cloud ;\n* Approfondir les connaissances en déploiement avec Docker ;\n\n> *PS : d’autres services ont été ajoutés par la suite dans cette architecture, comme un outil de gestion de projets : OpenProject.*",
+      "showDetails": false,
+      "detailImages": [
+        "/images/techno/Docker.png",
+        "/images/techno/Nextcloud.png",
+        "/images/techno/nginx.png",
+        "/images/techno/Reseau.png"
+      ],
+      "technologies": ["Docker", "Nextcloud", "Nginx", "Reseau"],
+      "extraContent": null,
+      "card": {
+        "image": "/images/projets/nextcloud.png",
+        "description": ""
+      }
+    },
+    {
+      "title": "Locals LLM",
+      "shortDescription": "Exploration d'une utilisation local de LLM dans le cadre de recherches autour du développement d'agents virtuels.",
+      "details": "Exploration des modèles de langage (LLM) en local, avec un focus sur les architectures légères adaptées à des environnements à faibles ressources.\nLes expérimentations ont porté sur la création d’agents autonomes et l’intégration de méthodes RAG (*Retrieval-Augmented Generation*) pour améliorer la pertinence des réponses générées.\n\nCette phase de recherche a aussi permis d’évaluer l’écosystème Langchain, dont l’instabilité et la complexité technique ont mis en évidence la nécessité de solutions plus robustes pour des cas d’usage réels.\n\nCe projet a permis de :\n\n* Évaluer la faisabilité de l’utilisation de LLM en local sans GPU haut de gamme ;\n* Mettre en œuvre des pipelines RAG simples pour enrichir les réponses de petits modèles ;\n* Identifier les limitations actuelles de frameworks comme Langchain dans un contexte de prototypage léger.",
+      "showDetails": false,
+      "extraContent": null,
+      "technologies": ["Python", "HuggingFace"],
+
+      "detailImages": [
+        "/images/techno/HuggingFace.png",
+        "/images/techno/lm-studio.png",
+        "/images/techno/Python.png"
+      ],
+      "card": {
+        "image": "/images/projets/LMStudio.png",
+        "description": "Interface de LM Studio"
+      }
+    },
+
+    {
+      "title": "Autres",
+      "shortDescription": "Réalisations techniques variées autour du traitement audio et du développement web, issues de projets exploratoires ou d’apprentissage ciblé.",
+      "details": "Réalisations techniques variées autour du traitement audio et du développement web, issues de projets exploratoires ou d’apprentissage ciblé.\nParmi ceux-ci :\n– Création d’un site vitrine pour un groupe de musique en utilisant Flask ;\n– Développement d’un métronome et d’un compresseur audio simple avec JUCE, dans le cadre d’une première approche du traitement du signal ;\n– Expérimentation d’un délai de type ping-pong avec Faust, afin de tester les capacités du framework en mathématiques et DSP.\n\nCes projets ont permis de :\n\n* Approfondir les bases du traitement du signal audio en C++ ;\n* Explorer différentes approches de conception d’effets audio numériques ;\n* Expérimenter plusieurs frameworks spécialisés (JUCE, Faust, Flask) dans des contextes concrets.",
+      "card": {
+        "image": "/images/projets/bfsite.png",
+        "description": "Site internet de brutal fekal"
+      },
+      "technologies": ["Flask", "C++", "JUCE", "CMake", "Java", "Python"],
+      "detailImages": [
+        "/images/techno/Flask.png",
+        "/images/techno/Cpp.png",
+        "/images/techno/JUCE.png",
+        "/images/techno/Cmake.png",
+        "/images/techno/Java.png",
+        "/images/techno/Python.png"
+      ],
+      "github": [
+        "https://github.com/MariusBoucard/pingPongDelay",
+        "https://github.com/MariusBoucard/bfWebsite"
+      ]
+    }
+  ]
+}

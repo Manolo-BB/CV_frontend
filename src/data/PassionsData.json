@@ -1,0 +1,46 @@
+{
+  "passions": [
+    {
+      "title": "Musique",
+      "description": "Membre d’un groupe avec lequel nous avons mené à bien la création et la sortie indépendante d’un album.\n\nCe projet a été une expérience humaine et artistique forte, marquée par l’apprentissage de la composition en groupe\net la gestion d’un projet commun ambitieux, que nous avons construit ensemble pas à pas.\nNous sommes très fiers du résultat final, fruit d’une véritable collaboration.\n\nEn parallèle, je pratique la guitare et j’apprécie particulièrement composer en solo,\nexplorant des idées personnelles et expérimentales.",
+      "card": {
+        "image": "/images/passions/bfShoot.JPG",
+        "description": "Notre Groupe : Brutal Fekal"
+      },
+      "imageList": [
+        "/images/passions/brutalfekal.jpg",
+        "/images/passions/repeteBF.jpg",
+        "/images/passions/mabecanealbum.png"
+      ]
+    },
+    {
+      "title": "Randonnée",
+      "description": "Ma récente installation à Grenoble m’a permis de découvrir la montagne et ses paysages spectaculaires.\nCette immersion dans un environnement naturel aussi riche m’a donné le goût de la randonnée,\ndes sorties en plein air et plus largement des activités en extérieur.\nCes explorations m’ont également éveillé à un nouvel intérêt : la photographie.   ",
+      "card": {
+        "image": "/images/passions/rando/chamechaudeHead.jpg",
+        "description": "Sommet de Chamechaude"
+      },
+      "imageList": [
+        "/images/passions/rando/chamechaude.jpg",
+        "/images/passions/rando/moucherotte.jpg",
+        "/images/passions/rando/chamrousse.jpg"
+      ]
+    },
+    {
+      "title": "Sport",
+      "description": "Je pratique une activité sportive de manière quotidienne, principalement autour de la course à pied,\ndu trail et du street workout.\nCette routine me permet de maintenir une bonne tonicité physique,\ntout en m’apportant un réel bénéfice en termes de clarté mentale et de rapidité de réflexion.\nLe sport permet d'atteindre un bon équilibre physique dans une vie sédentaire.",
+      "card": {
+        "image": "/images/passions/trail.jpeg",
+        "description": "Trail en Chartreuse avec des amies."
+      }
+    },
+    {
+      "title": "Studio",
+      "description": "Un de mes passe-temps principaux reste néanmoins le traitement du son, au sein de mon home studio.\nJ’aime enregistrer les chansons composées seul ou en équipe, puis prendre le temps d’agencer\net de mixer les enregistrements afin d’atteindre le résultat escompté.\nCe travail, très spécifique et technique, demande patience et précision : la courbe d’apprentissage est longue,\nmais particulièrement enrichissante.\n\n Dans le mixage de différents projets, j’utilise de nombreux plugins audio,\ndont certains développés par Slate Digital.",
+      "card": {
+        "image": "/images/passions/studio.jpg",
+        "description": "Home Studio"
+      }
+    }
+  ]
+}
