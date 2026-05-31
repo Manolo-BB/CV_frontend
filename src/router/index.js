@@ -31,20 +31,7 @@ const router = createRouter({
       path: '/passions',
       name: 'passions',
       component: () => import('../components/PassionsComponent.vue'),
-    },
-    {
-      path: '/contact',
-      name: 'contact',
-      component: () => import('../components/ContactComponent.vue'),
-    },
-    // {
-    //   path: '/about',
-    //name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (About.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    //component: () => import('../views/AboutView.vue'),
-    // }, // TO KEEP IN MIND FOR OPTIMISATIONS
+    }
   ],
 })
 

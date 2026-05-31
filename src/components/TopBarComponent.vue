@@ -1,43 +1,61 @@
 <template>
-  <div class="topbar bg- bg-primary">
-    <!-- Profile Section -->
+  <div class="topbar bg-primary">
     <div class="flex profile-container">
 
       <img src="@/assets/images/profilPicture.jpg" alt="Profile Picture" class="profile-pic" />
 
       <div class="profile">
         <div class="profile-info">
-          <h2>Marius Boucard Bocciarelli</h2>
-          <p class="text-white">Ingénieur informatique</p>
-          <p class="text-white">Passionné de musique et de bricolage informatique</p>
+          <h2>{{ profile.name }}</h2>
+          <p class="text-white">{{ profile.title }}</p>
+          <p class="text-white">{{ profile.description }}</p>
         </div>
-
+      </div> <div class="contact">
+        <p><strong>Tél :</strong> {{ profile.phone }}</p>
+        <p><strong>Email :</strong> <a :href="'mailto:' + profile.email">{{ profile.email }}</a></p>
       </div>
+
       <div class="external-links">
-        <a href="https://github.com/MariusBoucard" target="_blank"
-          class="external-link text-white bg-primaryButton hover:bg-secondaryButton hover:text-primary">GitHub</a>
-        <a href="https://open.spotify.com/intl-fr/artist/1ihPL4eI2ThTMGhWiPVef0" target="_blank"
-          class="external-link text-white bg-primaryButton hover:text-primary hover:bg-secondaryButton">Spotify</a>
-        <a href="https://www.linkedin.com/in/marius-boucard-bocciarelli-390793222/" target="_blank"
-          class="external-link text-white bg-primaryButton hover:text-primary hover:bg-secondaryButton">LinkedIn</a>
+        <a :href="profile.links.github" target="_blank"
+          class="external-link hover:bg-secondaryButton hover:text-primary"
+          title="GitHub">
+          <img src="@/assets/images/GitHub.png" alt="GitHub Logo" class="social-icon" />
+        </a>
+
+        <a :href="profile.links.linkedin" target="_blank"
+          class="external-link hover:bg-secondaryButton hover:text-primary"
+          title="LinkedIn">
+          <img src="@/assets/images/linkedin.png" alt="LinkedIn Logo" class="social-icon" />
+        </a>
       </div>
     </div>
-
 
     <!-- Router Links -->
     <div class="router-links flex flex-wrap">
       <router-link to="/motivations"
-        class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Motivations</router-link>
-      <router-link to="/cv" class="bubble bg-secondaryButton text-white hover:bg-primaryButton">CV</router-link>
+        class="bubble text-white">Motivations</router-link>
+      <router-link to="/cv"
+        class="bubble bg-secondaryButton text-white hover:bg-primaryButton">CV</router-link>
       <router-link to="/projects"
         class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Projects</router-link>
       <router-link to="/passions"
         class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Passions</router-link>
-      <router-link to="/contact"
-        class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Contact</router-link>
     </div>
   </div>
 </template>
+
+<script>
+import profileData from '@/data/ProfileData.json';
+
+export default {
+  name: "TopBar",
+  data() {
+    return {
+      profile: profileData
+    };
+  }
+};
+</script>
 
 <style scoped>
 .topbar {
@@ -51,9 +69,18 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.profile {
+.profile-container {
   display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.profile {
+  display: flex;
+  flex: 1;
   align-items: center;
   text-align: left;
   position: relative;
@@ -84,20 +111,42 @@
   font-size: 1.1rem;
 }
 
+.contact p {
+  margin: 5px 0;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.contact a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
 .external-links {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: end;
-  gap: 10px;
+  gap: 8px;
   margin-top: auto;
 }
 
 .external-link {
-  text-decoration: none;
-  font-weight: bold;
-  padding:  10px;
-  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* On définit une zone de clic carrée et petite */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Rend le fond du hover parfaitement rond */
+
+  background: transparent;
+  transition: all 0.2s ease;
 }
 
 .router-links {
@@ -117,20 +166,29 @@
 .bubble {
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--primaryButton, #1e293b);
 }
 
-.bubble:hover {
-  background: rgba(255, 255, 255, 0.4);
+/* Style au survol pour les boutons non-sélectionnés */
+.bubble:not(.router-link-active):hover {
+  background-color: var(--secondaryButton, rgba(62, 60, 60, 0.675));
   transform: scale(1.05);
+}
+
+/*Style du bouton sélectionné*/
+.bubble.router-link-active {
+  background-color: var(--secondaryButton, rgba(62, 60, 60, 0.675))!important;
+  color: #cbd5e1 !important; /* Texte légèrement atténué */
+  border-color: rgba(255, 255, 255, 0.1);
+  cursor: default; /* Indique qu'on ne peut pas recliquer dessus */
+  transform: none; /* Désactive l'effet de zoom */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Petit effet enfoncé */
 }
 
 
@@ -144,6 +202,13 @@
   .profile {
     align-items: center;
     text-align: center;
+  }
+
+  /* AJOUT MOBILE : L'encart s'adapte sur petit écran */
+  .contact {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
   }
 
   .external-links {
