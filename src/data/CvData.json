@@ -1,107 +1,90 @@
 {
-  "title": "Curriculum Vitae",
-  "description": "Vous trouverez dans cette rubrique l'ensemble des mes expériences professionnelles relatives au développement informatique.",
+  "title": "CV",
+  "description": "Cette rubrique rassemble mes expériences professionnelles et ma formation axées autour de l'électronique analogique, numérique et le développement de systèmes embarqués.",
 
   "additionnalInformations": "",
   "titleInfo": "",
   "Cv": [
     {
-      "compagnyName": "Slate digital",
-      "details": "Expérience chez **Slate Digital** ayant débutée par un **stage de 6 mois**, durant lequel j’ai eu l’opportunité de découvrir une stack technique C++ ainsi que l'environnement IOS en menant le **portage de leurs plugins audio sur IPad**.\nCela a nécessité la **création du support pour le format AUv3**, un format spécifique aux plugins audio sur **IOS**, ainsi que **l’adaptation du framework interne** à cette nouvelle plateforme. J’ai travaillé sur l’**implémentation des APIs adaptées** et sur **l’interprétation des messages** émis par l’iPad, en m’assurant du bon fonctionnement de l’interface et des performances des traitements audio.\nCe travail a permis à plusieurs plugins développés par Slate Digital de fonctionner efficacement sur iPad, avec des résultats convaincants en termes de performance et d’expérience utilisateur.",
-      "job": "Ingénieur C++",
-      "detailsTitle": "Développement de plugin audio",
-      "technologyImage": "/images/cv/slate_logo.png",
-      "pictureDescription": "Ce stage m’a permis de **comprendre en profondeur la structure d’un plugin audio**, ainsi que les spécificités d’un développement sur une plateforme mobile.\nL’expérience acquise a ensuite été directement mise à profit dans le cadre de mon **CDI** au sein de la même entreprise, où je continue à contribuer au développement de leurs logiciels.",
+      "compagnyName": "Université Polytechnique de Catalogne",
+      "details": "",
+      "job": "Stage à l'international",
+      "detailsTitle": "Assistant de recherche en conversion d'énergie",
+      "technologyImage": "/images/cv/UPC.jpg",
+      "pictureDescription": "Stage de 4 mois réalisé à l'**Université Polytechnique de Catalogne** (UPC). J'ai travaillé au sein d'un groupe de recherche en conversion d'énergie sur les systèmes **microgrids**, des réseaux électriques locaux visant à optimiser la distribution et le stockage des énergies renouvelables. J'ai notamment pu participer à l’amélioration de leur système en concevant des versions plus compactes des cartes d’interface DSP to inverter.\n\nCe stage m’a permis de :\n* Comprendre le comportement des réseaux microgrids ;\n* Concevoir des systèmes d’interfacage précis à destination du monde de la recherche ;\n* Travailler dans un environnement de recherche international et collaboratif ;",
       "detailImages": [
-        "/images/techno/Cpp.png",
-        "/images/techno/Cmake.png",
-        "/images/techno/JUCE.png",
-        "/images/techno/Skia.png",
-        "/images/techno/ObjectiveC.png"
+        "/images/techno/Kicad.jpg",
+        "/images/techno/EasyEDA.png"
       ],
       "image": "/images/cv/infeq.png",
       "description": "Plugin s'executant sur Ipad",
-      "yearBegin": "2024",
-      "yearEnd": null
+      "yearBegin": "mai 2026",
+      "yearEnd": "août 2026"
     },
     {
-      "compagnyName": "Coexya",
-      "details": "Stage de 2 mois réalisé durant l’été 2023 chez **Coexya**, au sein du pôle éditique.\nL’objectif principal était de faire évoluer une application interne nommée *Compote*, développée avec **VueJS** et déployée via **Electron**.\n\nMon travail a consisté à concevoir et intégrer de nouvelles fonctionnalités, notamment un système de **lancement en batch de scripts** à destination d’un moteur utilisé en production.\nL’outil, destiné à un public interne non technique, nécessitait une **interface claire, simple et accessible**, tout en respectant les contraintes fonctionnelles du pôle.",
-      "pictureDescription": "Ce stage m’a permis de :\n\n* Appliquer VueJS dans un **contexte professionnel structuré** ;\n* Développer des **features concrètes répondant à des besoins métiers réels** ;\n* Contribuer à un outil utilisé en production, dans un environnement d’entreprise ;\n* Approfondir l’usage de **Electron** pour le déploiement d’applications desktop internes.",
-      "detailsTitle": "Développement d'une application web",
-      "job": "Stage Développeur Web",
-      "technologyImage": "/images/cv/Coexya.png",
+      "compagnyName": "Sound Héritage",
+      "details": "Stage de 2 mois réalisé durant l’été 2025 chez **Sound Heritage**, une entreprise de réparation de produits audio vintage (enceintes, amplificateurs, tourne-disques...). L’objectif du stage était de concevoir des produits afin d’étendre leur offre d’occasion à des produits neufs de leur conception. J’ai notamment pu réaliser une **alimentation à fréquence variable** avec interface graphique et rétro-ingénierer et améliorer un **préamplificateur**. J’ai également pu proposer un protocole de test systématique et automatique du matériel en sortie de réparation, protocole réalisé avec le logiciel **Room EQ Wizard**.\n\n",
+      "pictureDescription": "Ce stage m’a permis de :\n* Concevoir des produits analogiques fonctionnels ;\n* Faire de la rétro-ingénierie et de l’analyse de schémas et de montages électroniques ;\n* Participer à toutes les étapes de conception d’un produit (du besoin à la solution en passant par le sourcing des composants)",
+      "detailsTitle": "Conception de produits audios analogiques",
+      "job": "Stage",
+      "technologyImage": "/images/cv/soundheritage.png",
       "detailImages": [
-        "/images/techno/Vuejs.png",
-        "/images/techno/Electron.png",
-        "/images/techno/Playwright.png"
+        "/images/techno/C.png",
+        "/images/techno/Kicad.jpg",
+        "/images/techno/REW.jpg"
       ],
-      "yearBegin": "2023",
-      "yearEnd": null
+      "image": "/images/projets/Alim V2.jpg",
+      "description": "Alimentation à fréquence variable",
+      "image": "/images/projets/Preamplificateur.jpg",
+      "description": "Préamplificateur à lampes",
+      "yearBegin": "juin 2025",
+      "yearEnd": "juillet 2025"
     },
     {
-      "compagnyName": "Newcastle University",
-      "details": "Semestre universitaire réalisé en début d’année 2023 à **Newcastle University**, dans le cadre d’un programme Erasmus+.\nCette expérience m’a permis de renforcer significativement mes **compétences en anglais**, tant à l’écrit qu’à l’oral, grâce à un environnement académique entièrement anglophone.\n\nLe cursus, axé sur la **lecture et l’analyse de publications scientifiques**, m’a également initié à la **recherche académique** à travers des travaux approfondis sur des articles spécialisés.",
+      "compagnyName": "Polytech Nantes",
+      "details": "Mon cursus au sein du département **Électronique et Technologies Numériques** (ETN) de **Polytech Nantes** m'a permis d'explorer l'étendue de la discipline : de la **physique des semi-conducteurs** à la programmation embarquée, en passant par la **conception de circuits analogiques** et numériques.",
       "job": "Etudiant",
-      "pictureDescription": "Le rythme plus flexible de la formation m’a offert l’opportunité de consacrer du temps à des **projets personnels** variés, en développement web et audio, me permettant d’expérimenter de nouveaux outils et d’approfondir mes centres d’intérêt techniques.",
-      "detailsTitle": "Erasmus",
-      "technologyImage": "/images/cv/newcastle.png",
+      "pictureDescription": "Au-delà d'un socle théorique solide, la richesse de cette formation réside dans sa mise en pratique à travers des projets concrets, tels que le contrôle moteur sur microcontrôleur **SAMD21**, le design d'un récepteur de **trames LIN** ou encore l'**instrumentation de ruches** connectées. Au cours de ma 5ème année, j'ai décidé de me spécialiser dans les **Systèmes Communicants Mobiles** afin de pouvoir continuer à travailler la dimension analogique qui me passionne. Ces acquis me permettent aujourd'hui d'appréhender au mieux les contraintes techniques et de concevoir des architectures matérielles pertinentes.",
+      "detailsTitle": "Cursus d'ingénieur en électronique",
+      "technologyImage": "images/cv/polytech_logo.png",
       "detailImages": [
-        "/images/techno/Python.png",
-        "/images/techno/Figma.png",
-        "/images/techno/Research.png"
-      ],
-      "yearBegin": 2023,
-      "yearEnd": 2023
-    },
-    {
-      "compagnyName": "Insa Rennes",
-      "details": "Cursus suivi en formation initiale à l’INSA de Rennes, au sein du département Informatique, après deux années de prépa intégrée. Ce parcours académique exigeant et complet m’a permis d’acquérir une vision large et structurée des fondamentaux de l’informatique, en explorant aussi bien les aspects théoriques (algorithmique, réseaux, architecture…) que pratiques (développement logiciel, bases de données, systèmes distribués…).\n\nAu cours de cette formation, j’ai choisi de me spécialiser en Data Science, ce qui m’a permis d’approfondir mes compétences en analyse de données, apprentissage automatique, statistiques et visualisation, tout en consolidant ma compréhension des enjeux liés à l’exploitation intelligente des données.\n\nLa diversité et la richesse des enseignements m’ont permis de développer une base solide de connaissances générales, tout en mettant en œuvre ces acquis à travers des projets concrets.",
-      "job": "Etudiant",
-      "pictureDescription": "Les concepts assimilés durant cette période jouent aujourd’hui un rôle clé dans ma capacité à comprendre les contraintes techniques d’un projet, à faire des choix pertinents en matière d’architecture ou de développement, et à anticiper les implications de ces décisions dans un cadre professionnel.",
-      "detailsTitle": "Cursus scolaire",
-      "technologyImage": "images/cv/insa_logo.png",
-      "detailImages": [
-        "/images/techno/Docker.png",
-        "/images/techno/Kubernetes.png",
-        "/images/techno/Spring.png",
+        "/images/techno/C.png",
+        "/images/techno/matlab.png",
+        "/images/techno/VHDL.png",
         "/images/techno/Java.png",
-        "/images/techno/Cpp.png",
-        "/images/techno/Maven.png",
-        "/images/techno/Mysql.png",
-        "/images/techno/Python.png",
-        "/images/techno/Angular.png"
+        "/images/techno/MCSE.png",
+        "/images/techno/Mplab.png",
+        "/images/techno/LTSpice.png",
+        "/images/techno/ADS.png",
+        "/images/techno/HDLDesigner.png"
       ],
-      "yearBegin": "2019",
+      "yearBegin": "2024",
+      "yearEnd": "2027"
+    },
+    {
+      "compagnyName": "Polytech Nantes",
+      "details": "J'ai effectué mes deux années de classe préparatoire intégrée à **Polytech Nantes**. Ce parcours m'a apporté un bagage scientifique solide, mais a surtout marqué le point de départ de mon intérêt pour l'électronique. Le véritable déclic s'est produit lors d'un projet de groupe : la conception d'un **robot mobile** programmé pour s'extraire d'un labyrinthe en autonomie. Cette première immersion, alliant matériel et programmation, a été décisive dans le choix de ma spécialisation.",
+      "job": "Etudiant",
+      "pictureDescription": "Dans la continuité de cette première expérience, j'ai pris en charge la dimension électronique du projet **ô'tomate**, un potager vertical autonome. Responsable de la conception des circuits, du dimensionnement et de l'intégration des capteurs, j'ai pu concrétiser mon attrait pour les systèmes embarqués. Ce projet, mêlant électronique et développement logiciel, a définitivement conforté mon choix de parcours en me permettant de piloter une architecture matérielle complète.",
+      "detailsTitle": "Classe préparatoire intégrée",
+      "technologyImage": "images/cv/polytech_logo.png",
+      "detailImages": [
+        "/images/techno/matlab.png",
+        "/images/techno/C.png",
+        "/images/techno/arduino.png"
+      ],
+      "yearBegin": "2022",
       "yearEnd": "2024"
     },
     {
-      "compagnyName": "L'agraphe journal",
-      "details": "Développement et maintien d’un site web *sur mesure* pour **L’Agrafe**, une association étudiante de l’Université **Rennes 2**.\nCe projet, mené de manière **autonome** en parallèle de mes études, a permis de concevoir une **application web** répondant à des besoins *spécifiques* exprimés par le comité de rédaction. \nGrace à des *échanges réguliers* nous avons **analysé les usages souhaités**, défini les **priorités fonctionnelles**, puis développé une **interface simple et intuitive** destinée à un public *non technique*. Aucun membre de l'association n'étant développeur.",
-      "technologyImage": "images/cv/lagrafe.png",
-      "detailsTitle": "Développement d'une solution Web pour l'association",
-      "job": "Développeur Web",
-      "pictureDescription": "Le site repose sur une **architecture Node** :\n\n* **Frontend** développé en *VueJS*\n* **Backend** géré avec *ExpressJS*\n\nCe projet m’a permis de renforcer mes compétences en **conception orientée utilisateur**, en **gestion de projet web**, et en **autonomie technique**.\nJ’en assure toujours la **maintenance** et les **évolutions fonctionnelles**.\n\n*Cf : Plus d'informations dans la rubrique projets.*",
-      "image": "/images/projets/agrafe.png",
-      "description": "Equipe de rédaction de l'agrafe",
-      "detailImages": [
-        "/images/techno/Vuejs.png",
-        "/images/techno/Express.png",
-        "/images/techno/Flask.png",
-        "/images/techno/nginx.png"
-      ],
-      "yearBegin": "2022",
-      "yearEnd": null
-    },
-    {
       "compagnyName": "Lycée Bourdonnières",
-      "details": "Parcours scientifique au **Lycée Les Bourdonnières** à **Nantes**,option en **physique-chimie**.",
+      "details": "Parcours scientifique au **Lycée Les Bourdonnières** à **Nantes**,spécialités **maths** et **physique-chimie**, option **maths expertes**.",
       "job": "Etudiant",
       "detailsTitle": "Bac Scientifique",
       "technologyImage": "images/cv/bourdonnieres.jpg",
       "detailImages": [],
-      "yearBegin": "2016",
-      "yearEnd": "2019"
+      "yearBegin": "2019",
+      "yearEnd": "2022"
     }
   ]
 }

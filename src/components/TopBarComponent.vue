@@ -10,23 +10,26 @@
           <p class="text-white">{{ profile.title }}</p>
           <p class="text-white">{{ profile.description }}</p>
         </div>
-      </div> <div class="contact">
-        <p><strong>Tél :</strong> {{ profile.phone }}</p>
-        <p><strong>Email :</strong> <a :href="'mailto:' + profile.email">{{ profile.email }}</a></p>
-      </div>
+        <div class="side-info-block">
+          <div class="contact">
+            <p><strong>Tél :</strong> {{ profile.phone }}</p>
+            <p><strong>Email :</strong> <a :href="'mailto:' + profile.email">{{ profile.email }}</a></p>
+          </div>
 
-      <div class="external-links">
-        <a :href="profile.links.github" target="_blank"
-          class="external-link hover:bg-secondaryButton hover:text-primary"
-          title="GitHub">
-          <img src="@/assets/images/GitHub.png" alt="GitHub Logo" class="social-icon" />
-        </a>
+          <div class="external-links">
+            <a :href="profile.links.github" target="_blank"
+              class="external-link hover:bg-secondaryButton hover:text-primary"
+              title="GitHub">
+              <img src="@/assets/images/GitHub.png" alt="GitHub Logo" class="social-icon" />
+            </a>
 
-        <a :href="profile.links.linkedin" target="_blank"
-          class="external-link hover:bg-secondaryButton hover:text-primary"
-          title="LinkedIn">
-          <img src="@/assets/images/linkedin.png" alt="LinkedIn Logo" class="social-icon" />
-        </a>
+            <a :href="profile.links.linkedin" target="_blank"
+              class="external-link hover:bg-secondaryButton hover:text-primary"
+              title="LinkedIn">
+              <img src="@/assets/images/linkedin.png" alt="LinkedIn Logo" class="social-icon" />
+            </a>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -111,6 +114,13 @@ export default {
   font-size: 1.1rem;
 }
 
+.side-info-block {
+  display: flext;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
 .contact p {
   margin: 5px 0;
   color: rgb(0, 0, 0);
@@ -128,25 +138,26 @@ export default {
 
 .external-links {
   display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: end;
-  gap: 8px;
-  margin-top: auto;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .external-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
-  /* On définit une zone de clic carrée et petite */
-  width: 100px;
-  height: 100px;
-  border-radius: 50%; /* Rend le fond du hover parfaitement rond */
-
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
   background: transparent;
   transition: all 0.2s ease;
+}
+
+.social-icon {
+  width: 164px;
+  height: 164px;
+  object-fit: contain;
 }
 
 .router-links {
@@ -155,7 +166,7 @@ export default {
   justify-content: center;
   gap: 15px;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .external-link:hover {
@@ -165,7 +176,7 @@ export default {
 
 .bubble {
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 10px;
   font-weight: bold;
   transition: all 0.3s ease;
@@ -204,7 +215,13 @@ export default {
     text-align: center;
   }
 
-  /* AJOUT MOBILE : L'encart s'adapte sur petit écran */
+  .side-info-block {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  /*L'encart s'adapte sur petit écran */
   .contact {
     width: 100%;
     text-align: center;
@@ -213,7 +230,7 @@ export default {
 
   .external-links {
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 </style>

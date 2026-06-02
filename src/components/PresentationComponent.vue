@@ -9,19 +9,16 @@
             <p class="text-lg text-center text-gray-600 mb-6">
                 {{ description }}
             </p>
-            <div class="flex justify-end">
-                <button @click="fetchPdf"
-                    class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 mb-4 rounded">
-                    CV pdf
-                </button>
-            </div>
+           <div class="flex justify-between items-center w-60 mb-4">
+            <button @click="fetchPdf"
+                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded">
+                CV_FR pdf
+            </button>
 
-            <div class="w-3/4 flex justify-center  mx-auto mb-6">
-                <img src="@/assets/images/sst.png" alt="CV Image" class="rounded-lg shadow-md w-20 h-20 mr-10" />
-                <p class="m-auto text-gray-600 mb-6">
-                    Nous avons eu la chance de suivre la formation SST (Sauveteur Secouriste du Travail) sur la base du
-                    volontariat en février 2025, en plus d'une formation aux risques incendie."
-                </p>
+            <button @click="fetchPdf"
+                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded">
+                CV_EN pdf
+            </button>
             </div>
 
             <!-- Video -->

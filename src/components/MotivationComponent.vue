@@ -48,7 +48,6 @@
                 <p class="mb-4">
                     <strong>Marius Boucard Bocciarelli</strong>
                 </p>
-                
             </div>
         </div>
     </div>
@@ -61,7 +60,7 @@ export default {
     name: "MotivationComponent",
     data() {
         return {
-            videoLink:  import.meta.env.VITE_APP_BACKEND_URL +"/api/video?name=cv.mp4", 
+            videoLink:  import.meta.env.VITE_APP_BACKEND_URL +"/api/video?name=cv.mp4",
             backendAvailable: false,
         };
     },
