@@ -10,23 +10,16 @@
                 {{ description }}
             </p>
            <div class="flex justify-between items-center w-60 mb-4">
-            <button @click="fetchPdf"
-                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded">
-                CV_FR pdf
-            </button>
-
-            <button @click="fetchPdf"
-                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded">
-                CV_EN pdf
-            </button>
-            </div>
-
-            <!-- Video -->
-            <div class="flex justify-center mb-6">
-                <video v-if="videoLink && backendAvailable" controls class="rounded-lg shadow-md w-3/5">
-                    <source :src="videoLink" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+              <!-- Version FR -->
+              <a href="/CV_Manolo_FR.pdf" download="CV_Manolo_FR.pdf"
+                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline">
+                  CV_FR pdf
+              </a>
+              <!-- Version EN -->
+              <a href="/CV_Manolo_EN.pdf" download="CV_Manolo_EN.pdf"
+                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline">
+                  CV_EN pdf
+              </a>
             </div>
 
             <h2 class="text-2xl font-semibold text-gray-700 mb-4 text-center">
@@ -52,15 +45,15 @@
                                 <h2 class="text-lg font-bold text-gray-800 truncate">
                                     {{ experience.compagnyName }}
                                 </h2>
-                                <p class="text-sm text-gray-600 mt-2">
+                                <p class="text-sm text-white mt-2">
                                     {{ experience.job }}
                                 </p>
                             </div>
 
                             <!-- Year and Arrow Section -->
                             <div
-                                class="flex flex-col items-center md:items-end text-sm text-gray-500 w-full md:w-32 mt-4 md:mt-0">
-                                <span class="text-gray-500 transform transition-transform"
+                                class="flex flex-col items-center md:items-end text-sm text-white w-full md:w-32 mt-4 md:mt-0">
+                                <span class="text-white transform transition-transform"
                                     :class="{ 'rotate-180': activeIndex === index }">
                                     ▼
                                 </span>
@@ -75,8 +68,6 @@
                         </h2>
                         <div v-if="experience.details" v-html="markdownToHtml(experience.details)"></div>
 
-
-
                         <div class="flex flex-col md:flex-row items-center gap-6">
                             <div v-if="experience.image" class="w-full md:w-1/2">
                                 <Card3DComponent class="w-full" :image="experience.image"
@@ -86,7 +77,12 @@
                             <div v-if="experience.pictureDescription" class="w-full md:w-1/2"
                                 v-html="markdownToHtml(experience.pictureDescription)"></div>
                         </div>
-
+                        <div class="flex flex-col md:flex-row items-center gap-6">
+                            <div v-if="experience.image2" class="w-full md:w-1/2">
+                                <Card3DComponent class="w-full" :image="experience.image2"
+                                    :description="experience.description2" />
+                            </div>
+                        </div>
 
                         <div class="mt-6 flex flex-wrap gap-4 justify-center">
                             <img v-for="(image, imgIndex) in experience.detailImages" :key="imgIndex" :src="image"
@@ -146,7 +142,6 @@ export default {
             marked.setOptions({
                 gfm: true,
                 breaks: true,
-                sanitize: true,
             });
             return marked(details);
         },
@@ -179,6 +174,11 @@ export default {
 </script>
 
 <style scoped>
+
+:deep(.cvList p) {
+    text-align: justify;
+}
+
 .cvList {
     margin-top: 20px;
 }
@@ -192,6 +192,11 @@ export default {
 .rotate-180 {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
+}
+
+:deep(.bg-listSecondary p) {
+    text-align: justify;
+    margin-bottom: 1rem;
 }
 
 .listItems {
