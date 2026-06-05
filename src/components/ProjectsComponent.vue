@@ -18,39 +18,37 @@
             </div>
         </div>
 
-        <div class="">
-            <div v-for="(project, index) in   filteredProjects  " :key="index"
-                class="bg-backgroundComp shadow-md rounded-lg  m-auto mb-6 p-6 transition-all duration-300 w-4/5 rootComp flex flex-col md:flex-row"
-                :class="{ 'h-auto': project.showDetails, 'h-auto': !project.showDetails }">
+        <div>
+            <div v-for="(project, index) in filteredProjects" :key="index"
+                class="bg-backgroundComp shadow-md rounded-lg m-auto mb-6 p-6 transition-all duration-300 w-4/5 rootComp flex flex-col md:flex-row">
 
                 <div class="flex-[2]">
                     <h2 class="text-2xl font-bold mb-4 text-center">{{ project.title }}</h2>
                     <p class="text-gray-700 mb-4 text-center">{{ project.shortDescription }}</p>
+
                     <div class="mt-4 flex flex-wrap gap-4 justify-center items-center">
                         <img v-for="(image, imgIndex) in project.detailImages" :key="imgIndex" :src="image" alt="Detail"
                             class="w-20 h-20 rounded-lg shadow-md" />
                     </div>
+
                     <div class="flex justify-center mt-4">
                         <button @click="toggleDetails(index)" class="text-blue-500 hover:underline">
                             {{ project.showDetails ? "Cacher les détails" : "Afficher les détails" }}
                         </button>
                     </div>
-                    <div v-show="project.showDetails"
-                        class="mt-4 flex justify-center items-center flex-col text-center">
+
+                    <div v-show="project.showDetails" class="mt-4 flex justify-center items-center flex-col text-center">
                         <div v-if="project.details" v-html="markdownToHtml(project.details)"></div>
 
                         <div v-if="project.extraContent" class="mt-4">
                             <img v-if="project.extraContent.image" :src="project.extraContent.image" alt="Extra Content"
                                 class="rounded-lg shadow-md" />
 
-
-
                             <div v-if="project.extraContent.links" class="mt-4">
                                 <p class="text-gray-800 font-semibold">Links:</p>
                                 <ul>
                                     <li v-for="(link, index) in project.extraContent.links" :key="index">
-                                        <a :href="link" target="_blank" class="text-blue-500 hover:underline">{{ link
-                                            }}</a>
+                                        <a :href="link" target="_blank" class="text-blue-500 hover:underline">{{ link }}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -58,16 +56,19 @@
                             <SoundPlayer v-if="project.extraContent.soundDry" :src="project.extraContent.soundDry"
                                 :inputDry="project.extraContent.soundDry" :inputWet="project.extraContent.soundWet"
                                 :label="project.extraContent.label" />
-
                         </div>
                     </div>
                 </div>
-                <div class="flex-[1] flex flex-col justify-center items-center mt-6 md:mt-0 md:ml-6">
-                    <!-- Card Component -->
-                    <Card3DComponent :image="project.card.image" :description="project.card.description"
-                        class="fixed-height" />
 
-                    <!-- Button Container -->
+                <div class="flex-[1] flex flex-col justify-center items-center mt-6 md:mt-0 md:ml-6">
+
+                    <div v-if="project.card.video" class="fixed-height w-full flex justify-center items-center overflow-hidden rounded-lg shadow-md bg-backgroundComp">
+                        <video :src="project.card.video" autoplay loop muted playsinline class="w-full h-full object-cover">
+                        </video>
+                    </div>
+
+                    <Card3DComponent v-else :image="project.card.image" :description="project.card.description" class="fixed-height" />
+
                     <div class="flex justify-center mt-4">
                         <a v-if="typeof project.github === 'string'" :href="project.github" target="_blank"
                             class="flex items-center bg-gray-800 text-white px-4 py-2 rounded-lg shadow-md hover:bg-gray-700 transition">
@@ -129,10 +130,7 @@ export default {
         },
         markdownToHtml() {
             return (details) => {
-        
                 this.markdown = details;
-                
-                // Convert markdown to HTML
                 marked.setOptions({
                     gfm: true,
                     breaks: true,
@@ -151,15 +149,16 @@ export default {
         },
         toggleDetails(index) {
             this.projects[index].showDetails = !this.projects[index].showDetails;
-        },
-        toggleDetails(index) {
-            this.projects[index].showDetails = !this.projects[index].showDetails;
-        },
+        }
     },
 };
 </script>
 
 <style scoped>
+:deep() {
+    text-align: justify;
+}
+
 .flex-1 {
     display: flex;
     flex-direction: column;
@@ -169,16 +168,13 @@ export default {
 .flex-1 .flex.justify-center.mt-6 {
     margin-top: 16px;
     margin-bottom: auto;
-
 }
 
 button.text-blue-500 {
     display: block;
-    margin: 12 auto;
+    margin: 12px auto;
     margin-top: 16px;
 }
-
-
 
 .bg-white {
     display: flex;
@@ -203,11 +199,10 @@ button.text-blue-500 {
     .bg-white {
         flex-direction: row;
     }
-  
-
 }
+
 @media (max-width: 768px) {
-    .rootComp{
+    .rootComp {
         width: 100%;
     }
 }

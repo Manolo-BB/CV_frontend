@@ -2,154 +2,82 @@
   "projects": [
     {
       "title": "Cv en ligne",
-      "shortDescription": "Ce projet que vous consultez, a été réalisé afin de développer mes compréhesions en déploiement via Docker et Kubernetes.",
-      "details": "Mise en place d'une **architecture complète** composée :\n\n* d’un **frontend en VueJS**, avec **Tailwind CSS** pour une interface responsive\n* d’un **backend en Spring Boot**, assurant la logique métier\n\nLes deux services sont :\n\n* **Conteneurisés avec Docker**\n* **Déployés sur un cluster Kubernetes**, permettant d’adopter les bonnes pratiques en environnement distribué\n\n **Fonctionnalités clés** :\n\n* Diffusion de **flux vidéo** depuis le backend\n\n\n **Compétences développées** :\n\n* Développement **web fullstack** : VueJS, Spring Boot\n* **Conteneurisation** : Docker\n* **Orchestration** : Kubernetes\n Utilisation de **framework CSS utilitaires** comme Tailwind CSS",
+      "shortDescription": "Ce projet que vous consultez à été réalisé afin de développer mes compétences en programmation WEB.",
+      "details": "Conception et développement d'un CV en ligne et portfolio numérique, pensé comme une vitrine pour centraliser et valoriser mes projets d'ingénierie. L'application a été entièrement développée avec le framework **Vue.js**, en exploitant l'architecture par composants pour garantir une interface dynamique, fluide et sans rechargement de page (Single Page Application). Le design et l'ergonomie ont été réalisés grâce à **Tailwind CSS**, permettant d'assurer une compatibilité totale et un affichage responsive sur tous types d'écrans. \n\nCe projet m’a permis de :\n-Maîtriser le développement Front-End, en structurant une application web\n-Conteneuriser une application web avec **Docker** pour isoler l'application et garantir la reproductibilité de l'environnement de développement\n-Piloter le déploiement en production (**Nginx**) ",
       "showDetails": false,
       "detailImages": [
         "/images/techno/Vuejs.png",
-        "/images/techno/Spring.png",
         "/images/techno/Docker.png",
-        "/images/techno/Kubernetes.png",
-        "/images/techno/nginx.png"
+        "/images/techno/nginx.png", "/images/techno/Git.png"
       ],
-      "technologies": ["Vuejs", "Spring", "Docker", "Kubernetes", "Nginx"],
+      "technologies": ["Vuejs", "Docker", "Nginx", "Git"],
       "card": {
-        "image": "/images/projets/cv.png",
+        "image": "/images/projets/CV.png",
         "description": "Capture d'écran du site"
       },
       "github": [
-        "https://github.com/MariusBoucard/cv-frontend",
-        "https://github.com/MariusBoucard/cv-backend"
+        "https://github.com/Manolo-BB/CV_frontend"
       ]
     },
     {
-      "title": "Virtual Amplifier NAM (VST)",
-      "shortDescription": "Plugin audio utilisant JUCE et intégrant le framework Neural Amp Modeler afin de modéliser un ampli virtuel. Le but de ce projet est de fournir une implémentation isofeature du plugin NAM en utilisant JUCE comme Framework graphique à la communauté.",
-      "details": "Développement d’un plugin audio d’amplification virtuelle à l’aide du framework **JUCE**, reposant sur le moteur open source **Neural Amp Modeler**. Le plugin permet de charger différents modèles d’amplis neuronaux compatibles avec l’architecture du framework d’origine. Il prend également en charge l'importation de réponses impulsionnelles (**IR**), utilisées pour simuler des cabinets de haut-parleurs ou des effets de réverbération.\n\nUne section de filtres paramétriques simples permet d’appliquer une égalisation sommaire du signal audio. L’interface graphique a été conçue en **3D avec Blender**, puis intégrée au plugin pour une présentation visuelle personnalisée.\n\n### Ce projet a permis de :\n\n- Réaliser un proof of concept de plugin audio avec **JUCE** ;\n- Approcher les bases du traitement numérique du signal audio ;\n- Concevoir une architecture modulable pour expérimenter différentes chaînes de traitement audio ;\n- Acquérir les fondamentaux de la modélisation **3D avec Blender**.",
-      "showDetails": false,
-
-      "technologies": ["JUCE", "C++", "CMake", "Blender"],
-      "detailImages": [
-        "/images/techno/Cpp.png",
-        "/images/techno/JUCE.png",
-        "/images/techno/Cmake.png",
-        "/images/techno/blender.png"
-      ],
-
-      "card": {
-        "image": "/images/projets/amp.png",
-        "description": "Interface de l'ampli"
-      },
-      "github": "https://github.com/MariusBoucard/GainPlugin"
-    },
-    {
-      "title": "Geiger Noise Generator (VST)",
-      "shortDescription": "Plugin audio en C++ ajoutant des artefacts au signal audio. En explorant la modélisation sonore, pour reproduire le bruit d'un compteur geiger.",
-      "details": "Basé sur l'architecture modulaire développée avec JUCE\n* Interface graphique **3D avec Blender**\n* Intégration de **filtres simples** pour le traitement du signal\n\n **Algorithme sonore** :\n\n* Utilise un **modèle exponentiel** simulant des événements aléatoires\n* Génère un **bruit probabiliste** fidèle à un détecteur Geiger\n\n---\n\n#### Ce projet a permis de :\n\n* Réutiliser une architecture **JUCE** dans un nouveau contexte\n* Expérimenter la **synthèse sonore probabiliste**\n* Renforcer les compétences en **traitement du signal** et **interface 3D**",
-      "showDetails": false,
-      "detailImages": [
-        "/images/techno/Cpp.png",
-        "/images/techno/JUCE.png",
-        "/images/techno/Cmake.png",
-        "/images/techno/blender.png"
-      ],
-      "technologies": ["JUCE", "C++", "CMake", "Blender"],
-      "extraContent": {
-        "soundDry": "/api/audio?name=geigerless.mp3&type=dry",
-        "soundWet": "/api/audio?name=geiger.mp3&type=wet",
-        "label": "Test compteur Geiger / BitCrusher"
-      },
-      "card": {
-        "image": "/images/projets/geiger.png",
-        "description": "Compteur Geiger"
-      },
-      "github": "https://github.com/MariusBoucard/BitCrusher"
-    },
-    {
-      "title": "L'agrafe Journal",
-      "shortDescription": "Site internet doté d'un backend ainsi que d'une page admin permettant à l'équipe de rédaction du journal d'ajouter leurs propres contenus.",
-      "details": "### **L'agrafe Journal**\n\nConception et développement d’un **site web éditorial** pour l’association L’Agrafe (Université Rennes 2) :\n\n**Architecture** :\n\n* Frontend : **VueJS**\n* Backend : **ExpressJS**\n* Proxy : **NGINX**\n* Hébergement : VM chez **Blue Ocean**\n\n**Fonctionnalités** :\n\n* Espace d’**administration personnalisé**\n* Gestion autonome des contenus par des rédacteurs non techniques\n* Migration depuis un prototype **Flask** vers une solution **robuste et modulaire**\n\n---\n\n####  Ce projet a permis de :\n\n* Concevoir une **architecture fullstack éditoriale**\n* Mettre en œuvre un **déploiement sur Linux + NGINX**\n* Travailler avec des utilisateurs **non techniques**\n* Gérer une **migration technologique** pour améliorer l’évolutivité",
-      "showDetails": false,
-      "detailImages": [
-        "/images/techno/Vuejs.png",
-        "/images/techno/Docker.png",
-        "/images/techno/Express.png",
-        "/images/techno/nginx.png"
-      ],
-      "technologies": ["Vuejs", "Docker", "Express", "Nginx"],
-      "extraContent": {
-        "image": "/images/projets/agrafe.png",
-        "links": ["https://lagrafejournal.com"]
-      },
-      "card": {
-        "image": "/images/projets/agrafesite.png",
-        "description": "Site de l'Agrafe"
-      },
-      "github": [
-        "https://github.com/MariusBoucard/agrafeFrontend",
-        "https://github.com/MariusBoucard/agrafeBackend"
-      ]
-    },
-    {
-      "title": "Our Journey",
-      "shortDescription": "Site personnel regroupant l'ensemble des chansons sur lesquelles nous avons pu travailler avec des amis.",
-      "details": "**Développement** d’un site personnel visant à **centraliser** et **archiver** des **compositions musicales** réalisées en collaboration. Le site repose sur une architecture **VueJS** (frontend) et **ExpressJS** (backend), avec une base de données **MySQL** pour la gestion des contenus. Cette structure, héritée du projet **_L’Agrafe_**, assure une **cohérence technique** et une bonne **maintenabilité**.\n\nL’interface permet de :\n- **Parcourir** les morceaux,\n- **Consulter** leurs détails,\n- Accéder à l’ensemble des compositions via une **bibliothèque centralisée**.\n\n### Ce projet a permis de :\n- **Réutiliser** une architecture fullstack éprouvée (**VueJS**, **ExpressJS**, **MySQL**) ;\n- **Concevoir** un système d’**archivage structuré** pour contenus musicaux ;\n- **Approfondir** l’utilisation de bases de données relationnelles dans un contexte applicatif simple.",
-      "showDetails": false,
-
-      "extraContent": { "links": ["https://ourjourney.fr"] },
-      "detailImages": [
-        "/images/techno/Vuejs.png",
-        "/images/techno/Docker.png",
-        "/images/techno/Express.png",
-        "/images/techno/nginx.png"
-      ],
-      "technologies": ["Vuejs", "Docker", "Express", "Nginx"],
-      "card": {
-        "image": "/images/projets/ourjourney.png",
-        "description": "Page d'accueil de ourjourney.fr"
-      },
-      "github": "https://github.com/MariusBoucard/ourJourney"
-    },
-    {
-      "title": "Guitar Course App",
-      "shortDescription": "Application web wrappée dans Electon. Fourni les ressources nécessaires à mon apprentissage de la guitare",
-      "details": "Développement d’une application desktop dédiée à la pratique et à la composition à la guitare, construite avec VueJS et empaquetée avec Electron pour un déploiement multiplateforme.\nL’application intègre plusieurs outils d’assistance musicale : visualisation du manche et de ses notes, chargement local de vidéos, création de playlists personnalisées pour structurer les sessions de travail.\n\nPensée comme un support quotidien, l’application facilite un entraînement régulier et ciblé, tout en servant d’environnement centralisé pour l’exploration musicale et la composition.\n\nCe projet a permis de :\n\n* Mettre en œuvre VueJS dans un contexte desktop via Electron ;\n* Concevoir une interface orientée utilisateur avec gestion locale de fichiers multimédia ;\n* Créer un outil d’assistance musicale personnalisé, adapté à une pratique instrumentale régulière.",
+      "title": "BeeWatch",
+      "shortDescription": "Développement d'un système de surveillance de ruches à distance",
+      "details": "BeeWatch est une solution connectée d'aide à la décision dédiée aux apiculteurs pour automatiser le suivi et la gestion de la santé des ruches. Le système assure l'acquisition en temps réel de variables environnementales et physiques (température, humidité, poids de la ruche) et intègre une géolocalisation GPS pour la sécurité antivol.\n\n L’architecture globale du système est distribuée en trois niveaux interconnectés :\n• **Le module embarqué** : Placé sur chaque ruche, il gère l'acquisition de données capteurs en ultra-basse consommation et assure la transmission sans fil (**LoRa**). \n• **Le concentrateur** (Passerelle) : Positionné au centre du rucher, il centralise les flux de données des différents modules locaux et les encapsule pour un transfert longue portée via le protocole LoRa vers la station mère.\n• **La station mère & Interface Web** : Située chez l'apiculteur, elle assure le stockage des données et héberge une application web permettant une visualisation graphique, intuitive et à distance de l'état du rucher.\n\nCe projet m’a permis de :\n-Concevoir une architecture IoT de bout en bout (élaboration du CdC avec le client, spécification, développement et tests)\n-Créer une interface de supervision (Full-Stack)\n-Manager une équipe de 6 étudiants afin de mener à bien le projet",
       "showDetails": false,
       "extraContent": null,
-      "detailImages": ["/images/techno/Vuejs.png", "/images/techno/Electron.png"],
-      "technologies": ["Vuejs", "Electron"],
+      "detailImages": ["/images/techno/C.png", "/images/techno/LoRa.png","/images/techno/Jira.png","/images/techno/Git.png","/images/techno/JavaScript.png","/images/techno/React.png","/images/techno/Docker.png","/images/techno/PostgreSQL.png", "/images/techno/FreeCad.png"],
+      "technologies": ["C", "LoRa", "Jira", "Git", "JavaScript", "React", "Docker", "PostgreSQL", "FreeCad"],
       "card": {
-        "image": "/images/projets/guitarApp.png",
-        "description": "Capture d'écran de l'appli."
-      },
-      "github": "https://github.com/MariusBoucard/guitarapp"
+        "image": "/images/projets/BeeWatch.jpeg",
+        "description": "Boîtier BeeWatch"
+      }
     },
     {
-      "title": "Script App",
-      "shortDescription": "Une application web déployée avec electron pour la rédaction de scénarios audiovisuels.",
-      "details": "Face à l’inefficacité des outils classiques de bureautique pour la rédaction de scénarios, une application web en VueJS a été développée en 35 heures pour répondre spécifiquement aux besoins d’un tournage de clip vidéo.\nL’interface, pensée pour la fluidité et la structuration du texte, a permis la rédaction d’un script de 20 pages en moins de 5 heures, contre un temps bien plus long estimé avec des solutions non spécialisées.\n\nCe projet a permis de :\n\n* Concevoir un outil léger et ciblé pour la rédaction de scripts audiovisuels ;\n* Utiliser VueJS dans un développement rapide et agile ;\n* Déployer l'application en utilisant Electron.",
+      "title": "Asservissement moteur basé sur le SAMD21",
+      "shortDescription": "Ce projet vise à développer mes compétences en programmation de périphériques de microcontrôleur",
+      "details": "Conception et réalisation d'un système d'asservissement de moteur basé sur la génération de signaux PWM, visant à maîtriser la programmation bas niveau des périphériques d'un microcontrôleur **ARM Cortex-M0+** (**SAMD21**). Mené en appliquant la méthodologie **MCSE**, ce projet a couvert l'ensemble du cycle de développement, de la phase de spécification jusqu'à l'implémentation logicielle. Le système s'appuie sur la configuration et la synchronisation de périphériques du microcontrôleur : les **Timers/Counters** pour le contrôle de la puissance par PWM, et le convertisseur analogique-numérique (**CAN / ADC**) pour l'acquisition en temps réel des variables de retour du moteur.\n\nCe projet m’a permis de :\n-Maîtriser la méthodologie de conception **MCSE** \n-Développer en environnement professionnel (**Microchip Studio**) en C/C++\n-Programmer et piloter des périphériques bas niveaux",      
+      
       "showDetails": false,
+      "detailImages": [
+        "/images/techno/C.png",
+        "/images/techno/Mplab.png",
+        "/images/techno/MCSE.png", "/images/techno/Git.png"
+      ],
+      "technologies": ["C", "Microchip Studio", "MCSE", "Git"],
       "extraContent": null,
-      "technologies": ["Vuejs", "Electron"],
-      "detailImages": ["/images/techno/Vuejs.png", "/images/techno/Electron.png"],
       "card": {
-        "image": "/images/projets/scriptGenerator.png",
+        "image": "/images/projets/Controle_moteur.png",
         "description": ""
-      },
-      "github": "https://github.com/MariusBoucard/scriptgenerator"
+      }
+    },
+    {
+      "title": "Console de salon rétro",
+      "shortDescription": "Ce projet vise à valoriser un vieil ordinateur obsolète",
+      "details": "Conception et fabrication d’une console de salon rétro-gaming basée sur le système d'exploitation **RetroPie**. L'objectif principal de ce projet était de valoriser un ordinateur obsolète afin de lui offrir une seconde vie. Le projet a nécessité une phase de conception CAO et de réflexion esthétique pour modéliser une structure ergonomique et sur mesure, adaptée aux matériel de récupération (PC). Ce projet complet combine l'optimisation logicielle de systèmes légers, la réalisation et programmation de contrôleurs de jeu et la fabrication des boîtiers.\n\nCe projet m’a permis de :\n-Concevoir un ensemble mécanique complet\n-Configurer et optimiser un système d'exploitation\n-Mener une démarche d’écoconception",        
+      "showDetails": false,
+      "detailImages": [
+        "/images/techno/Linux.png",
+        "/images/techno/FreeCad.png"
+      ],
+      "technologies": ["Linux", "FreeCad"],
+      "extraContent": null,
+      "card": {
+        "image": "/images/projets/Controleur.jpeg",
+        "description": ""
+      }
     },
     {
       "title": "Nextcloud",
       "shortDescription": "Infrastructure hebergée sur un raspberry pi.",
-      "details": "Mise en place d’une instance auto-hébergée de Nextcloud sur Raspberry Pi, orchestrée via Docker.\nCe projet vise à garder un contrôle total sur les données personnelles, en remplaçant des solutions propriétaires comme Google Drive ou Microsoft OneDrive par une alternative libre et locale.\nL’installation a nécessité des connaissances réseau, notamment la gestion des ports et de la sécurité de base.\n\nCe projet a permis de :\n\n* Expérimenter l’auto-hébergement de services cloud ;\n* Approfondir les connaissances en déploiement avec Docker ;\n\n> *PS : d’autres services ont été ajoutés par la suite dans cette architecture, comme un outil de gestion de projets : OpenProject.*",
+      "details": "Mise en place d’une instance auto-hébergée de Nextcloud sur Raspberry Pi, orchestrée via Docker. Ce projet vise à garder un contrôle total sur les données personnelles, en remplaçant des solutions propriétaires comme Google Drive ou Microsoft OneDrive par une alternative libre et locale.\n\n Ce projet m'a permis de :\n-Expérimenter l’auto-hébergement de services cloud \n-Découvrir le déploiement avec Docker ",      
+      
       "showDetails": false,
       "detailImages": [
         "/images/techno/Docker.png",
         "/images/techno/Nextcloud.png",
-        "/images/techno/nginx.png",
         "/images/techno/Reseau.png"
       ],
-      "technologies": ["Docker", "Nextcloud", "Nginx", "Reseau"],
+      "technologies": ["Docker", "Nextcloud", "Reseau"],
       "extraContent": null,
       "card": {
         "image": "/images/projets/nextcloud.png",
@@ -157,45 +85,91 @@
       }
     },
     {
-      "title": "Locals LLM",
-      "shortDescription": "Exploration d'une utilisation local de LLM dans le cadre de recherches autour du développement d'agents virtuels.",
-      "details": "Exploration des modèles de langage (LLM) en local, avec un focus sur les architectures légères adaptées à des environnements à faibles ressources.\nLes expérimentations ont porté sur la création d’agents autonomes et l’intégration de méthodes RAG (*Retrieval-Augmented Generation*) pour améliorer la pertinence des réponses générées.\n\nCette phase de recherche a aussi permis d’évaluer l’écosystème Langchain, dont l’instabilité et la complexité technique ont mis en évidence la nécessité de solutions plus robustes pour des cas d’usage réels.\n\nCe projet a permis de :\n\n* Évaluer la faisabilité de l’utilisation de LLM en local sans GPU haut de gamme ;\n* Mettre en œuvre des pipelines RAG simples pour enrichir les réponses de petits modèles ;\n* Identifier les limitations actuelles de frameworks comme Langchain dans un contexte de prototypage léger.",
+      "title": "Design d’un récepteur de trames LIN",
+      "shortDescription": "Conception et simulation d’un récepteur de trames LIN",
+      "details": "Conception et simulation d’un récepteur de trames **LIN (Local Interconnect Network)**, un protocole standardisé dans le secteur automobile pour le contrôle de périphériques (lève-vitres, rétroviseurs, habitacle). En appliquant la méthodologie **MCSE**, le projet a consisté à formaliser le cahier des charges sous forme de machines à états finis (FSM) avant de passer à la description matérielle en **VHDL**. La validation fonctionnelle et temporelle du récepteur a été entièrement réalisée sur la suite CAO de Siemens, permettant de simuler le comportement du design face aux contraintes du protocole (détection du Break, synchronisation de l'horloge et décodage des identifiants).\n\nCe projet m’a permis de :\n-Maîtriser la modélisation et la synthèse en **VHDL**\n-Prendre en main les outils de CAO et de simulation industrielle de Siemens\n-Mettre en œuvre la méthodologie **MCSE**",
       "showDetails": false,
       "extraContent": null,
-      "technologies": ["Python", "HuggingFace"],
+      "detailImages": ["/images/techno/VHDL.png", "/images/techno/MCSE.png", "/images/techno/Git.png"],
+      "technologies": ["VHDL", "MCSE", "Siemens", "Git"],
+      "card": {
+        "image": "/images/projets/LIN receiver.jpeg",
+        "description": "Observation de la trame LIN"
+      }
+    },
+     {
+      "title": "Modulation/Demodulation AM/FM",
+      "shortDescription": "Réalisation d'un système de modulation et démodulation en amplitude (AM) et en fréquence (FM)",
+      "details": "Visant à explorer les techniques au cœur des technologies de communication radio, ce projet consistait à concevoir et mettre en œuvre un système de modulation d'amplitude (AM) à taux de modulation fini et de modulation en fréquence (FM), articulé autour d'un multiplieur analogique quatre quadrants AD633. L’objectif étant de découvrir les techniques utilisés dans les technologies de communication radios.  Un volet de l'étude a porté sur la réception et la démodulation du signal par un procédé de détection synchrone, impliquant la reconstruction locale de la porteuse et le dimensionnement de filtres analogiques pour éliminer les résidus haute fréquence (HF) et restituer le signal d'information.\n\nCe projet m’a permis de :\n-Maîtriser les architectures de modulation et démodulation analogiques\n-Concevoir des chaînes de filtrage et de conditionnement de signal\n-Caractériser des signaux dans les domaines temporel et fréquentiel",
+      "showDetails": false,
+      "extraContent": null,
+      "detailImages": ["/images/techno/LTSpice.png"],
+      "technologies": ["LTSpice"],
+      "card": {
+        "image": "/images/projets/AM.png",
+        "description": "Signal démodulé en AM observé à la sortie du filtre"
+      }
+    },
+    {
+      "title": "Filtrage HF en lignes microruban",
+      "shortDescription": "Réalisation d'un filtre passe bande en ligne microruban pour des applications RF",
+      "details": "Étude et conception d’un système de filtrage haute fréquence (HF) basé sur la technologie des lignes microrubans (**microstrip**), visant à exploiter l’équivalence physique entre des portions de lignes de transmission et des composants discrets en hyperfréquences. Le projet a intégré le calcul analytique des dimensions des lignes, la modélisation des discontinuités et la simulation pour concevoir un filtre répondant à un gabarit fréquentiel précis. \n\n Ce projet m’a permis de :\n-Maîtriser les concepts fondamentaux de la radiofréquence (**RF**), notamment la théorie des lignes de transmission, les coefficients de réflexion et les paramètres S \n-Utiliser des outils de simulation électromagnétique et CAO RF (**ADS**) pour modéliser, analyser et optimiser les performances fréquentielles du filtre avant fabrication\n-Concevoir des circuits distribués en traduisant un schéma électrique théorique (LC) en une géométrie physique de lignes microrubans sur substrat",
+      "showDetails": false,
+      "extraContent": null,
+      "detailImages": ["/images/techno/ADS.png", "/images/techno/Git.png"],
+      "technologies": ["ADS", "Git"],
+      "card": {
+        "image": "/images/projets/passe_bande.png",
+        "description": "Réponse d'un filtre passe bande en ligne microruban"
+      }
+    },
+    {
+      "title": "Robot autonome",
+      "shortDescription": "Réalisation d'un robot capable de sortir d'un labyrinthe en autonomie",
+      "details": "Développement d’un robot autonome dédié à la résolution et à la sortie de labyrinthes, articulé autour d'une architecture embarquée **STM32** et programmé en *C++*. Le système intègre plusieurs capteurs (télémètres, capteurs de luminosité...) permettant au robot de se repérer dans son environnement. Pensé comme une course, le robot ajuste sa trajectoire de manière dynamique (**PID**) et gère ses moteurs pour réussir à sortir du labyrinthe sans intervention humaine extérieure.\n\n Ce projet m’a permis de :\n -Mettre en œuvre la programmation embarquée en C/C++ dans un contexte de robotique mobile\n -Concevoir et intégrer une architecture matérielle associant microcontrôleur, gestion de la puissance et acquisition de données capteurs",
+      "showDetails": false,
+      "extraContent": null,
+      "detailImages": ["/images/techno/Cpp.png"],
+      "technologies": ["C++"],
+      "card": {
+        "video": "/images/projets/robot.mp4",
+        "description": "Robot autonome en fonctionnement"
+      }
+    },
+    {
+      "title": "Ô'tomate",
+      "shortDescription": "Réalisation d'un potager vertical autonome",
+      "details": "Mené au sein d'une équipe de 12 étudiants en deuxième année de classe préparatoire, ce projet pluridisciplinaire intégrait des problématiques de structure mécanique, de besoins agronomiques et d'électronique embarquée. En tant que responsable du projet et responsable de la partie électronique, j'ai conçu les modules d'irrigation et d'ombrage intelligent. J'ai également pris en charge l'optimisation logicielle du microprocesseur, mettant en place des stratégies de gestion de l'énergie pour rationaliser ses cycles de fonctionnement et éviter les calculs redondants.\n\n Ce projet m’a permis de :\n-Manager et coordonner une équipe projet de 12 personnes\n-Prendre en main les outils de gestion et de suivi collaboratif (Jira, Git)\n-Concevoir, intégrer et optimiser un système électronique",
+      "showDetails": false,
+      "extraContent": null,
+      "technologies": ["C++", "Jira", "Git"],
 
       "detailImages": [
-        "/images/techno/HuggingFace.png",
-        "/images/techno/lm-studio.png",
-        "/images/techno/Python.png"
+        "/images/techno/Cpp.png",
+        "/images/techno/Jira.png",
+        "/images/techno/Git.png"
       ],
       "card": {
-        "image": "/images/projets/LMStudio.png",
-        "description": "Interface de LM Studio"
+        "image": "/images/projets/Otomate.jpeg",
+        "description": "Potager vertical autonome Ô'tomate"
       }
     },
 
     {
-      "title": "Autres",
-      "shortDescription": "Réalisations techniques variées autour du traitement audio et du développement web, issues de projets exploratoires ou d’apprentissage ciblé.",
-      "details": "Réalisations techniques variées autour du traitement audio et du développement web, issues de projets exploratoires ou d’apprentissage ciblé.\nParmi ceux-ci :\n– Création d’un site vitrine pour un groupe de musique en utilisant Flask ;\n– Développement d’un métronome et d’un compresseur audio simple avec JUCE, dans le cadre d’une première approche du traitement du signal ;\n– Expérimentation d’un délai de type ping-pong avec Faust, afin de tester les capacités du framework en mathématiques et DSP.\n\nCes projets ont permis de :\n\n* Approfondir les bases du traitement du signal audio en C++ ;\n* Explorer différentes approches de conception d’effets audio numériques ;\n* Expérimenter plusieurs frameworks spécialisés (JUCE, Faust, Flask) dans des contextes concrets.",
+      "title": "Modélisation et Impression 3D",
+      "shortDescription": "Conception et impression de modèles 3D pour des objets personnalisés.",
+      "details": "À travers différents projets personnels, j’ai exploré la modélisation et l’impression 3D. J’utilise la modélisation paramétrique sur **FreeCAD** pour concevoir des pièces modulables, allant du prototypage rapide au remplacement de pièces mécaniques. L'exploitation au quotidien de ma **Creality Ender 3 S1** m'a permis d'acquérir une bonne compréhension des variables d'impression. En jouant sur les profils de tranchage, les températures et les motifs de remplissage, je cherche le compromis idéal entre esthétique, résistance mécanique et économie de matière.",
       "card": {
-        "image": "/images/projets/bfsite.png",
-        "description": "Site internet de brutal fekal"
+        "image": "/images/projets/lunettes.png",
+        "description": "Lunettes de marionette"
       },
-      "technologies": ["Flask", "C++", "JUCE", "CMake", "Java", "Python"],
+      "technologies": ["FreeCad", "Cura", "CrealityPrint"],
       "detailImages": [
-        "/images/techno/Flask.png",
-        "/images/techno/Cpp.png",
-        "/images/techno/JUCE.png",
-        "/images/techno/Cmake.png",
-        "/images/techno/Java.png",
-        "/images/techno/Python.png"
+        "/images/techno/FreeCad.png",
+        "/images/techno/Cura.png",
+        "/images/techno/Creality.jpg"
       ],
-      "github": [
-        "https://github.com/MariusBoucard/pingPongDelay",
-        "https://github.com/MariusBoucard/bfWebsite"
-      ]
+      "github": [      ]
     }
   ]
 }
