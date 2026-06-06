@@ -2,10 +2,9 @@
     <div class="flex flex-col items-center min-h-screen bg-background p-6">
         <h1 class="text-4xl font-bold mb-6 text-center">Plus personnellement</h1>
         <p class="text-lg text-gray-700 mb-8 w-3/4 text-center">
-            Au dela d'un informaticien, je suis aussi un humain avec diverses passions, auxquelles je m'adonne sur le
-            temps libre.
-            Je fais beaucoup de musique, de sport, et apprécie aller explorer un coin de nature.
-        </p>
+            Au-delà de l'ingénierie, je trouve mon équilibre dans des univers qui partagent les mêmes valeurs d'engagement et de curiosité. Grand sportif, j'aime me dépasser au quotidien et cultive l'esprit d'équipe.
+            Mon esprit d'exploration se prolonge à la maison : passionné de homelabbing, j'adore concevoir et réparer des appareils électroniques, donner une seconde vie aux objets est quelque chose qui me tient à coeur.
+       </p>
 
         <div class="w-4/5 relative mb-4">
             <div class="flex transition-transform duration-500 ease-in-out"

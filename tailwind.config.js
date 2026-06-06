@@ -12,7 +12,7 @@ export default {
         accent: '#F59E0B',
         background: '#EBE4D5',
         textPrimary: '#1F2937',
-        textSecondary: '#ffffff',
+        textSecondary: '#201f1f',
 
         listPrimary: '#ff6600',
         listSecondary: '#ff8d41',

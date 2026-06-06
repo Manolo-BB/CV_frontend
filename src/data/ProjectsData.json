@@ -2,6 +2,7 @@
   "projects": [
     {
       "title": "Cv en ligne",
+      "date": "2026",
       "shortDescription": "Ce projet que vous consultez à été réalisé afin de développer mes compétences en programmation WEB.",
       "details": "Conception et développement d'un CV en ligne et portfolio numérique, pensé comme une vitrine pour centraliser et valoriser mes projets d'ingénierie. L'application a été entièrement développée avec le framework **Vue.js**, en exploitant l'architecture par composants pour garantir une interface dynamique, fluide et sans rechargement de page (Single Page Application). Le design et l'ergonomie ont été réalisés grâce à **Tailwind CSS**, permettant d'assurer une compatibilité totale et un affichage responsive sur tous types d'écrans. \n\nCe projet m’a permis de :\n-Maîtriser le développement Front-End, en structurant une application web\n-Conteneuriser une application web avec **Docker** pour isoler l'application et garantir la reproductibilité de l'environnement de développement\n-Piloter le déploiement en production (**Nginx**) ",
       "showDetails": false,
@@ -21,19 +22,22 @@
     },
     {
       "title": "BeeWatch",
+      "date": "2025-2026",
       "shortDescription": "Développement d'un système de surveillance de ruches à distance",
       "details": "BeeWatch est une solution connectée d'aide à la décision dédiée aux apiculteurs pour automatiser le suivi et la gestion de la santé des ruches. Le système assure l'acquisition en temps réel de variables environnementales et physiques (température, humidité, poids de la ruche) et intègre une géolocalisation GPS pour la sécurité antivol.\n\n L’architecture globale du système est distribuée en trois niveaux interconnectés :\n• **Le module embarqué** : Placé sur chaque ruche, il gère l'acquisition de données capteurs en ultra-basse consommation et assure la transmission sans fil (**LoRa**). \n• **Le concentrateur** (Passerelle) : Positionné au centre du rucher, il centralise les flux de données des différents modules locaux et les encapsule pour un transfert longue portée via le protocole LoRa vers la station mère.\n• **La station mère & Interface Web** : Située chez l'apiculteur, elle assure le stockage des données et héberge une application web permettant une visualisation graphique, intuitive et à distance de l'état du rucher.\n\nCe projet m’a permis de :\n-Concevoir une architecture IoT de bout en bout (élaboration du CdC avec le client, spécification, développement et tests)\n-Créer une interface de supervision (Full-Stack)\n-Manager une équipe de 6 étudiants afin de mener à bien le projet",
       "showDetails": false,
       "extraContent": null,
-      "detailImages": ["/images/techno/C.png", "/images/techno/LoRa.png","/images/techno/Jira.png","/images/techno/Git.png","/images/techno/JavaScript.png","/images/techno/React.png","/images/techno/Docker.png","/images/techno/PostgreSQL.png", "/images/techno/FreeCad.png"],
-      "technologies": ["C", "LoRa", "Jira", "Git", "JavaScript", "React", "Docker", "PostgreSQL", "FreeCad"],
+      "detailImages": ["/images/techno/C.png", "/images/techno/LoRa.png","/images/techno/Jira.png","/images/techno/Git.png","/images/techno/JavaScript.png","/images/techno/Docker.png","/images/techno/PostgreSQL.png", "/images/techno/FreeCad.png"],
+      "technologies": ["C", "LoRa", "Jira", "Git", "JavaScript", "Docker", "PostgreSQL", "FreeCad"],
       "card": {
         "image": "/images/projets/BeeWatch.jpeg",
         "description": "Boîtier BeeWatch"
-      }
+      },
+      "github": ["https://github.com/Manolo-BB/3D_models/tree/main/BeeWatch"]
     },
     {
       "title": "Asservissement moteur basé sur le SAMD21",
+      "date": "2025",
       "shortDescription": "Ce projet vise à développer mes compétences en programmation de périphériques de microcontrôleur",
       "details": "Conception et réalisation d'un système d'asservissement de moteur basé sur la génération de signaux PWM, visant à maîtriser la programmation bas niveau des périphériques d'un microcontrôleur **ARM Cortex-M0+** (**SAMD21**). Mené en appliquant la méthodologie **MCSE**, ce projet a couvert l'ensemble du cycle de développement, de la phase de spécification jusqu'à l'implémentation logicielle. Le système s'appuie sur la configuration et la synchronisation de périphériques du microcontrôleur : les **Timers/Counters** pour le contrôle de la puissance par PWM, et le convertisseur analogique-numérique (**CAN / ADC**) pour l'acquisition en temps réel des variables de retour du moteur.\n\nCe projet m’a permis de :\n-Maîtriser la méthodologie de conception **MCSE** \n-Développer en environnement professionnel (**Microchip Studio**) en C/C++\n-Programmer et piloter des périphériques bas niveaux",      
       
@@ -48,10 +52,12 @@
       "card": {
         "image": "/images/projets/Controle_moteur.png",
         "description": ""
-      }
+      }, 
+      "github": ["https://github.com/Manolo-BB/3D_models/tree/main/BeeWatch"]
     },
     {
       "title": "Console de salon rétro",
+      "date": "2025",
       "shortDescription": "Ce projet vise à valoriser un vieil ordinateur obsolète",
       "details": "Conception et fabrication d’une console de salon rétro-gaming basée sur le système d'exploitation **RetroPie**. L'objectif principal de ce projet était de valoriser un ordinateur obsolète afin de lui offrir une seconde vie. Le projet a nécessité une phase de conception CAO et de réflexion esthétique pour modéliser une structure ergonomique et sur mesure, adaptée aux matériel de récupération (PC). Ce projet complet combine l'optimisation logicielle de systèmes légers, la réalisation et programmation de contrôleurs de jeu et la fabrication des boîtiers.\n\nCe projet m’a permis de :\n-Concevoir un ensemble mécanique complet\n-Configurer et optimiser un système d'exploitation\n-Mener une démarche d’écoconception",        
       "showDetails": false,
@@ -64,10 +70,12 @@
       "card": {
         "image": "/images/projets/Controleur.jpeg",
         "description": ""
-      }
-    },
+      },
+      "github": ["https://github.com/Manolo-BB/3D_models/tree/main/game%20controller"]
+      },
     {
       "title": "Nextcloud",
+      "date": "2025",
       "shortDescription": "Infrastructure hebergée sur un raspberry pi.",
       "details": "Mise en place d’une instance auto-hébergée de Nextcloud sur Raspberry Pi, orchestrée via Docker. Ce projet vise à garder un contrôle total sur les données personnelles, en remplaçant des solutions propriétaires comme Google Drive ou Microsoft OneDrive par une alternative libre et locale.\n\n Ce projet m'a permis de :\n-Expérimenter l’auto-hébergement de services cloud \n-Découvrir le déploiement avec Docker ",      
       
@@ -86,6 +94,7 @@
     },
     {
       "title": "Design d’un récepteur de trames LIN",
+      "date": "2025",
       "shortDescription": "Conception et simulation d’un récepteur de trames LIN",
       "details": "Conception et simulation d’un récepteur de trames **LIN (Local Interconnect Network)**, un protocole standardisé dans le secteur automobile pour le contrôle de périphériques (lève-vitres, rétroviseurs, habitacle). En appliquant la méthodologie **MCSE**, le projet a consisté à formaliser le cahier des charges sous forme de machines à états finis (FSM) avant de passer à la description matérielle en **VHDL**. La validation fonctionnelle et temporelle du récepteur a été entièrement réalisée sur la suite CAO de Siemens, permettant de simuler le comportement du design face aux contraintes du protocole (détection du Break, synchronisation de l'horloge et décodage des identifiants).\n\nCe projet m’a permis de :\n-Maîtriser la modélisation et la synthèse en **VHDL**\n-Prendre en main les outils de CAO et de simulation industrielle de Siemens\n-Mettre en œuvre la méthodologie **MCSE**",
       "showDetails": false,
@@ -99,6 +108,7 @@
     },
      {
       "title": "Modulation/Demodulation AM/FM",
+      "date": "2025",
       "shortDescription": "Réalisation d'un système de modulation et démodulation en amplitude (AM) et en fréquence (FM)",
       "details": "Visant à explorer les techniques au cœur des technologies de communication radio, ce projet consistait à concevoir et mettre en œuvre un système de modulation d'amplitude (AM) à taux de modulation fini et de modulation en fréquence (FM), articulé autour d'un multiplieur analogique quatre quadrants AD633. L’objectif étant de découvrir les techniques utilisés dans les technologies de communication radios.  Un volet de l'étude a porté sur la réception et la démodulation du signal par un procédé de détection synchrone, impliquant la reconstruction locale de la porteuse et le dimensionnement de filtres analogiques pour éliminer les résidus haute fréquence (HF) et restituer le signal d'information.\n\nCe projet m’a permis de :\n-Maîtriser les architectures de modulation et démodulation analogiques\n-Concevoir des chaînes de filtrage et de conditionnement de signal\n-Caractériser des signaux dans les domaines temporel et fréquentiel",
       "showDetails": false,
@@ -112,6 +122,7 @@
     },
     {
       "title": "Filtrage HF en lignes microruban",
+      "date": "2026",
       "shortDescription": "Réalisation d'un filtre passe bande en ligne microruban pour des applications RF",
       "details": "Étude et conception d’un système de filtrage haute fréquence (HF) basé sur la technologie des lignes microrubans (**microstrip**), visant à exploiter l’équivalence physique entre des portions de lignes de transmission et des composants discrets en hyperfréquences. Le projet a intégré le calcul analytique des dimensions des lignes, la modélisation des discontinuités et la simulation pour concevoir un filtre répondant à un gabarit fréquentiel précis. \n\n Ce projet m’a permis de :\n-Maîtriser les concepts fondamentaux de la radiofréquence (**RF**), notamment la théorie des lignes de transmission, les coefficients de réflexion et les paramètres S \n-Utiliser des outils de simulation électromagnétique et CAO RF (**ADS**) pour modéliser, analyser et optimiser les performances fréquentielles du filtre avant fabrication\n-Concevoir des circuits distribués en traduisant un schéma électrique théorique (LC) en une géométrie physique de lignes microrubans sur substrat",
       "showDetails": false,
@@ -125,6 +136,7 @@
     },
     {
       "title": "Robot autonome",
+      "date": "2024",
       "shortDescription": "Réalisation d'un robot capable de sortir d'un labyrinthe en autonomie",
       "details": "Développement d’un robot autonome dédié à la résolution et à la sortie de labyrinthes, articulé autour d'une architecture embarquée **STM32** et programmé en *C++*. Le système intègre plusieurs capteurs (télémètres, capteurs de luminosité...) permettant au robot de se repérer dans son environnement. Pensé comme une course, le robot ajuste sa trajectoire de manière dynamique (**PID**) et gère ses moteurs pour réussir à sortir du labyrinthe sans intervention humaine extérieure.\n\n Ce projet m’a permis de :\n -Mettre en œuvre la programmation embarquée en C/C++ dans un contexte de robotique mobile\n -Concevoir et intégrer une architecture matérielle associant microcontrôleur, gestion de la puissance et acquisition de données capteurs",
       "showDetails": false,
@@ -138,6 +150,7 @@
     },
     {
       "title": "Ô'tomate",
+      "date": "2023-2024",
       "shortDescription": "Réalisation d'un potager vertical autonome",
       "details": "Mené au sein d'une équipe de 12 étudiants en deuxième année de classe préparatoire, ce projet pluridisciplinaire intégrait des problématiques de structure mécanique, de besoins agronomiques et d'électronique embarquée. En tant que responsable du projet et responsable de la partie électronique, j'ai conçu les modules d'irrigation et d'ombrage intelligent. J'ai également pris en charge l'optimisation logicielle du microprocesseur, mettant en place des stratégies de gestion de l'énergie pour rationaliser ses cycles de fonctionnement et éviter les calculs redondants.\n\n Ce projet m’a permis de :\n-Manager et coordonner une équipe projet de 12 personnes\n-Prendre en main les outils de gestion et de suivi collaboratif (Jira, Git)\n-Concevoir, intégrer et optimiser un système électronique",
       "showDetails": false,
@@ -169,7 +182,7 @@
         "/images/techno/Cura.png",
         "/images/techno/Creality.jpg"
       ],
-      "github": [      ]
+      "github": ["https://github.com/Manolo-BB/3D_models"]
     }
   ]
 }

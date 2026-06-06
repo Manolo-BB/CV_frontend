@@ -1,45 +1,66 @@
 {
   "passions": [
     {
-      "title": "Musique",
-      "description": "Membre d’un groupe avec lequel nous avons mené à bien la création et la sortie indépendante d’un album.\n\nCe projet a été une expérience humaine et artistique forte, marquée par l’apprentissage de la composition en groupe\net la gestion d’un projet commun ambitieux, que nous avons construit ensemble pas à pas.\nNous sommes très fiers du résultat final, fruit d’une véritable collaboration.\n\nEn parallèle, je pratique la guitare et j’apprécie particulièrement composer en solo,\nexplorant des idées personnelles et expérimentales.",
+      "title": "Sport",
+      "description": "Ma pratique sportive quotidienne est un pilier de mon équilibre. Passionné de basket, de course à pied et de trail, cette routine me permet non seulement de maintenir une excellente forme physique, mais m'apporte également une clarté mentale et une réactivité intellectuelle au quotidien. Le trail et la course de fond développent mon endurance et ma résilience face aux défis de longue haleine. En complément, le basket incarne ma vision du collectif : le travail de stratégie et la coordination sur le terrain prouvent que la synergie d'une équipe permet toujours d'atteindre des résultats ambitieux, inenvisageables seul.",
       "card": {
-        "image": "/images/passions/bfShoot.JPG",
-        "description": "Notre Groupe : Brutal Fekal"
+        "image": "/images/passions/sport/basket.jpeg",
+        "description": "Match de basket avec l'équipe de l'école"
       },
       "imageList": [
-        "/images/passions/brutalfekal.jpg",
-        "/images/passions/repeteBF.jpg",
-        "/images/passions/mabecanealbum.png"
+        "/images/passions/sport/10k.jpeg",
+        "/images/passions/sport/semi.jpeg",
+        "/images/passions/sport/montserrat_solo.jpg"
       ]
     },
     {
       "title": "Randonnée",
-      "description": "Ma récente installation à Grenoble m’a permis de découvrir la montagne et ses paysages spectaculaires.\nCette immersion dans un environnement naturel aussi riche m’a donné le goût de la randonnée,\ndes sorties en plein air et plus largement des activités en extérieur.\nCes explorations m’ont également éveillé à un nouvel intérêt : la photographie.   ",
+      "description": "Mon stage de 4ème année a été l'occasion d'une rencontre avec le milieu montagnard, partagée avec les membres du laboratoire. La randonnée et le trail en montagne ont été de véritables révélations. Le temps suspendu de la montée, exigeant sur le plan sportif, offre un espace d'introspection unique qui culmine toujours par la récompense de panoramas exceptionnels. Cette expérience a profondément ancré mon attachement aux valeurs de la montagne : la persévérance, l'humilité face à la nature et le plaisir du dépassement de soi.",
       "card": {
-        "image": "/images/passions/rando/chamechaudeHead.jpg",
-        "description": "Sommet de Chamechaude"
+        "image": "/images/passions/rando/montserrat_groupe.jpg",
+        "description": "Découverte de Montserrat en Espagne avec l'équipe du laboratoire."
       },
       "imageList": [
-        "/images/passions/rando/chamechaude.jpg",
-        "/images/passions/rando/moucherotte.jpg",
-        "/images/passions/rando/chamrousse.jpg"
+        "/images/passions/rando/montserrat_paysage.jpg",
+        "/images/passions/rando/montserrat_duo.jpg",
+        "/images/passions/rando/foix.jpg",
+        "/images/passions/rando/chartreuse.jpeg"
+      ]
+    },
+    
+    {
+      "title": "Homelabbing",
+      "description": "Au fil des ans, je me suis équipé à la maison pour pouvoir concevoir et réparer mon propre matériel électronique. Parmi mes réussites, j'ai pu redonner vie à un vieil amplificateur audio et une platine vinyle trouvés au grenier, mais aussi à pas mal d'objets du quotidien comme des lampes ou des petits appareils défectueux. Réparer plutôt que jeter donne un sens très concret aux connaissances théoriques de ma formation. C'est une démarche qui me tient à cœur et qui apporte une vraie valeur ajoutée dans un monde de surconsommation constante. ",
+      "card": {
+        "image": "/images/passions/homelabbing/oscilloscopes.jpeg",
+        "description": "Oscilloscopes récupérés et réparés"
+      },
+      "imageList": [
+        "/images/passions/homelabbing/amplificateur.jpeg",
+        "/images/passions/homelabbing/platine.jpeg",
+        "/images/passions/homelabbing/creality.jpeg"
+      ]
+    },
+    
+    {
+      "title": "Cuisine",
+      "description": "La cuisine est un super terrain de jeu créatif. J'adore recevoir mes proches pour partager de bons moments. Plus jeune, j'aimais déjà tellement ça que je gérais des réseaux sociaux culinaires pour partager mes propres recettes. Aujourd'hui, j'adore tester des combinaisons originales et inventer des plats qui réussissent le pari d'être à la fois gourmands et sains (ou pas). Au bout du compte, ce que je préfère, c'est simplement faire plaisir et régaler une table.",
+       "card": {
+        "image": "/images/passions/cuisine/twix.jpeg",
+        "description": "Twix maison"
+      },
+      "imageList": [
+        "/images/passions/cuisine/burgers.jpeg",
+        "/images/passions/cuisine/oeufs_choco.jpeg",
+        "/images/passions/cuisine/sandwich_falaffels.jpeg"
       ]
     },
     {
-      "title": "Sport",
-      "description": "Je pratique une activité sportive de manière quotidienne, principalement autour de la course à pied,\ndu trail et du street workout.\nCette routine me permet de maintenir une bonne tonicité physique,\ntout en m’apportant un réel bénéfice en termes de clarté mentale et de rapidité de réflexion.\nLe sport permet d'atteindre un bon équilibre physique dans une vie sédentaire.",
+      "title": "Musique",
+      "description": "La musique est un véritable exutoire, un moyen de déconnecter et de me recentrer sur des choses simples. J'adore vivre cette passion en allant à des concerts ou des festivals. À côté de ça, j'aime écrire mes propres chansons : c'est ma façon de coucher sur papier mes idées à la volée ou ce qui me préoccupe. ",
       "card": {
-        "image": "/images/passions/trail.jpeg",
-        "description": "Trail en Chartreuse avec des amies."
-      }
-    },
-    {
-      "title": "Studio",
-      "description": "Un de mes passe-temps principaux reste néanmoins le traitement du son, au sein de mon home studio.\nJ’aime enregistrer les chansons composées seul ou en équipe, puis prendre le temps d’agencer\net de mixer les enregistrements afin d’atteindre le résultat escompté.\nCe travail, très spécifique et technique, demande patience et précision : la courbe d’apprentissage est longue,\nmais particulièrement enrichissante.\n\n Dans le mixage de différents projets, j’utilise de nombreux plugins audio,\ndont certains développés par Slate Digital.",
-      "card": {
-        "image": "/images/passions/studio.jpg",
-        "description": "Home Studio"
+        "image": "/images/passions/musique.jpeg",
+        "description": "Concert"
       }
     }
   ]

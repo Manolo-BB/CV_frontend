@@ -17,12 +17,6 @@
           </div>
 
           <div class="external-links">
-            <a :href="profile.links.github" target="_blank"
-              class="external-link hover:bg-secondaryButton hover:text-primary"
-              title="GitHub">
-              <img src="@/assets/images/GitHub.png" alt="GitHub Logo" class="social-icon" />
-            </a>
-
             <a :href="profile.links.linkedin" target="_blank"
               class="external-link hover:bg-secondaryButton hover:text-primary"
               title="LinkedIn">
