@@ -16,8 +16,8 @@
         "/images/techno/EasyEDA.png",
         "/images/techno/matlab.png"
       ],
-      "image": "/images/projets/Alim V2.jpg",
-      "description": "Alimentation à fréquence variable",
+      "image": "/images/projets/DSPtoINVERTER.jpeg",
+      "description": "Carte de communication pour commander un onduleur à partir d’un DSP",
       "yearBegin": "mai 2026",
       "yearEnd": "août 2026"
     },
@@ -29,8 +29,8 @@
       "job": "Stage",
       "technologyImage": "/images/cv/soundheritage.png",
       "detailImages": [
-        "/images/techno/C.png",
         "/images/techno/Kicad.jpg",
+        "/images/techno/C.png",
         "/images/techno/REW.jpg"
       ],
       "image": "/images/projets/Alim V2.jpg",
@@ -49,14 +49,14 @@
       "technologyImage": "images/cv/polytech_logo.png",
       "detailImages": [
         "/images/techno/C.png",
+        "/images/techno/LTSpice.png",
         "/images/techno/matlab.png",
         "/images/techno/VHDL.png",
-        "/images/techno/Java.png",
+        "/images/techno/HDLDesigner.png",
         "/images/techno/MCSE.png",
         "/images/techno/Mplab.png",
-        "/images/techno/LTSpice.png",
-        "/images/techno/ADS.png",
-        "/images/techno/HDLDesigner.png"
+        "/images/techno/Java.png",
+        "/images/techno/ADS.png"
       ],
       "yearBegin": "2024",
       "yearEnd": "2027"

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center items-start min-h-screen bg-background">
+    <div class="flex justify-center items-start min-h-screen bg-background p-4">
         <div class="bg-backgroundComp shadow-md rounded-lg p-6 transition-all duration-300 listItems"
             :class="activeIndex !== null ? 'w-4/5 md:w-3/4' : 'w-3/5 md:w-2/3 lg:w-1/2'">
             <h1 class="text-4xl font-extrabold mb-6 text-center text-gray-800">
@@ -9,17 +9,49 @@
             <p class="text-lg text-center text-gray-600 mb-6">
                 {{ description }}
             </p>
-           <div class="flex justify-between items-center w-60 mb-4">
-              <!-- Version FR -->
-              <a href="/CV_Manolo_FR.pdf" download="CV_Manolo_FR.pdf"
-                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline">
-                  CV_FR pdf
-              </a>
-              <!-- Version EN -->
-              <a href="/CV_Manolo_EN.pdf" download="CV_Manolo_EN.pdf"
-                class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline">
-                  CV_EN pdf
-              </a>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6 w-full mb-8 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                <div class="flex flex-col gap-3 w-full sm:w-auto min-w-[150px]">
+                    <p class="text-sm font-semibold text-gray-500 text-center sm:text-left mb-1">Télécharger mon CV :</p>
+                    <a href="/CV_Manolo_FR.pdf" download="CV_Manolo_FR.pdf"
+                        class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline shadow-sm transition">
+                        Version Française
+                    </a>
+                    <a href="/CV_Manolo_EN.pdf" download="CV_Manolo_EN.pdf"
+                        class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline shadow-sm transition">
+                        English Version
+                    </a>
+                </div>
+
+                <!--Niveaux en langues -->
+                <div class="flex flex-col gap-2 w-full sm:w-auto bg-white p-3 rounded-lg shadow-sm border border-gray-100 min-w-[200px]">
+                    <p class="text-sm font-semibold text-gray-500 text-center sm:text-left mb-1">Compétences linguistiques :</p>
+
+                    <div class="flex items-center justify-between gap-4 px-2 py-1 bg-gray-50 rounded">
+                        <span class="flex items-center gap-2 text-base">
+                            <span class="text-xl">🇫🇷</span>
+                            <span class="font-medium text-gray-700">Français</span>
+                        </span>
+                        <span class="text-xs bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded-full">Langue maternelle</span>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4 px-2 py-1 bg-gray-50 rounded">
+                        <span class="flex items-center gap-2 text-base">
+                            <span class="text-xl">🇬🇧</span>
+                            <span class="font-medium text-gray-700">Anglais</span>
+                        </span>
+                        <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded-full">Score TOEIC : 930/990</span>
+                    </div>
+
+                    <div class="flex items-center justify-between gap-4 px-2 py-1 bg-gray-50 rounded">
+                        <span class="flex items-center gap-2 text-base">
+                            <span class="text-xl">🇪🇸</span>
+                            <span class="font-medium text-gray-700">Espagnol</span>
+                        </span>
+                        <span class="text-xs bg-yellow-100 text-yellow-700 font-bold px-2 py-0.5 rounded-full">Niveau Intermédiaire</span>
+                    </div>
+                </div>
+
             </div>
 
             <h2 class="text-2xl font-semibold text-gray-700 mb-4 text-center">
@@ -137,8 +169,6 @@ export default {
 
         },
         markdownToHtml(details) {
-
-
             marked.setOptions({
                 gfm: true,
                 breaks: true,
@@ -174,7 +204,6 @@ export default {
 </script>
 
 <style scoped>
-
 :deep(.cvList p) {
     text-align: justify;
 }

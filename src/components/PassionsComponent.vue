@@ -2,33 +2,34 @@
     <div class="flex flex-col items-center min-h-screen bg-background p-6">
         <h1 class="text-4xl font-bold mb-6 text-center">Plus personnellement</h1>
         <p class="text-lg text-gray-700 mb-8 w-3/4 text-center">
-            Au-delà de l'ingénierie, je trouve mon équilibre dans des univers qui partagent les mêmes valeurs d'engagement et de curiosité. Grand sportif, j'aime me dépasser au quotidien et cultive l'esprit d'équipe.
+            Au-delà de l'ingénierie, je trouve mon équilibre dans des univers qui partagent les mêmes valeurs d'engagement et de curiosité. Sportif, j'aime me dépasser au quotidien et cultive l'esprit d'équipe.
             Mon esprit d'exploration se prolonge à la maison : passionné de homelabbing, j'adore concevoir et réparer des appareils électroniques, donner une seconde vie aux objets est quelque chose qui me tient à coeur.
        </p>
-
-        <div class="w-4/5 relative mb-4">
-            <div class="flex transition-transform duration-500 ease-in-out"
-                :style="{ transform: `translateX(-${activeIndex * (imageWidth + translationOffset)}%)` }">
-                <div v-for="(image, index) in images" :key="index"
-                    :style="{ width: `${imageWidth}%`, transform: getImageTransform(index), opacity: getImageOpacity(index) }"
-                    class="transition-all duration-500 ease-in-out">
-                    <img :src="image" @mouseenter="setCarousselIndex(index)" alt="Project Image"
-                        class="w-full h-64 object-cover rounded-lg shadow-md" />
-                </div>
-            </div>
-
-        </div>
 
         <div v-for="( project, index ) in  passions " :key="index"
     class="w-3/4 holder border-b last:no-border bg-backgroundComp last:rounded-lg p-6">
     <h2 class="text-2xl font-bold mb-2">{{ project.title }}</h2>
 
-    <div class="flex flex-col md:flex-row items-center">
-        <p class="text-gray-700 mb-4 md:mb-0 flex-1">{{ project.description }}</p>
-        <div class="w-full md:w-1/2">
-            <Card3DComponent :image="project.card.image" :description="project.card.description" />
-        </div>
+    <div class="flex flex-col md:flex-row items-start gap-8">
+
+    <div class="flex-1">
+        <p
+            v-for="(paragraph, pIndex) in formatParagraphs(project.description)"
+            :key="pIndex"
+            class="text-gray-700 justified paragraph"
+        >
+            {{ paragraph }}
+        </p>
     </div>
+
+    <div class="w-full md:w-2/5 lg:w-1/2 card-container">
+        <Card3DComponent
+            :image="project.card.image"
+            :description="project.card.description"
+        />
+    </div>
+
+</div>
     <div v-if="project.imageList" class="mt-4">
         <CarousselComponent :images="project.imageList" />
     </div>
@@ -120,12 +121,35 @@ export default {
                 return 0.5;
             }
         },
+      formatParagraphs(text) {
+        return text.split(/\n\s*\n/);
+        },
     },
 };
 </script>
 
 
 <style scoped>
+@media (min-width: 768px) {
+    .holder {
+        width: 85%;
+    }
+
+    .card-container {
+        min-width: 450px;
+    }
+}
+
+.justified {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.paragraph {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
 .flex-1 {
     display: flex;
     flex-direction: column;

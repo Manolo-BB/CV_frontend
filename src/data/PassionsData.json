@@ -2,7 +2,7 @@
   "passions": [
     {
       "title": "Sport",
-      "description": "Ma pratique sportive quotidienne est un pilier de mon équilibre. Passionné de basket, de course à pied et de trail, cette routine me permet non seulement de maintenir une excellente forme physique, mais m'apporte également une clarté mentale et une réactivité intellectuelle au quotidien. Le trail et la course de fond développent mon endurance et ma résilience face aux défis de longue haleine. En complément, le basket incarne ma vision du collectif : le travail de stratégie et la coordination sur le terrain prouvent que la synergie d'une équipe permet toujours d'atteindre des résultats ambitieux, inenvisageables seul.",
+      "description": "Ma pratique sportive quotidienne est un pilier de mon équilibre. Passionné de basket, de course à pied et de trail, cette routine me permet non seulement de maintenir une bonne forme physique, mais m'apporte également une clarté mentale et une réactivité intellectuelle au quotidien. Le trail et la course de fond développent mon endurance, ma résilience et ma capacité à progresser sur le long terme, tandis que le basket incarne ma vision du collectif : stratégie, communication et coordination démontrent que la synergie d’une équipe permet d’atteindre des objectifs ambitieux, inaccessibles individuellement.\n\n Cette conviction m’a conduit à m’investir activement au sein du Bureau des Sports de Polytech Nantes ainsi que dans l’équipe de basket de l’école. Au-delà de la pratique sportive, cet engagement m’a permis de contribuer à l’organisation de projets collectifs, de renforcer mon sens des responsabilités et de développer ma capacité à fédérer des personnes autour d’objectifs communs. ",
       "card": {
         "image": "/images/passions/sport/basket.jpeg",
         "description": "Match de basket avec l'équipe de l'école"
@@ -15,7 +15,7 @@
     },
     {
       "title": "Randonnée",
-      "description": "Mon stage de 4ème année a été l'occasion d'une rencontre avec le milieu montagnard, partagée avec les membres du laboratoire. La randonnée et le trail en montagne ont été de véritables révélations. Le temps suspendu de la montée, exigeant sur le plan sportif, offre un espace d'introspection unique qui culmine toujours par la récompense de panoramas exceptionnels. Cette expérience a profondément ancré mon attachement aux valeurs de la montagne : la persévérance, l'humilité face à la nature et le plaisir du dépassement de soi.",
+      "description": "Mon stage de quatrième année a été l’occasion de découvrir l’univers de la montagne, une passion née au contact des membres du laboratoire. La randonnée et le trail en montagne ont été de véritables révélations. L’effort de l’ascension, à la fois exigeant physiquement et techniquement, offre un moment privilégié pour se déconnecter du quotidien, prendre du recul et se recentrer sur l’essentiel. Chaque sommet atteint est récompensé par des panoramas magnifiques, mais aussi par un sentiment d’accomplissement. \n\n Au-delà de l’aspect sportif, la randonnée est également pour moi un vecteur de relations humaines. Les heures passées sur les sentiers favorisent les échanges, l’entraide et le partage d’expériences, créant des liens durables entre les personnes. Cette pratique a renforcé mon attachement aux valeurs qui caractérisent le milieu montagnard : la persévérance, l’humilité face à la nature, l’esprit d’équipe et le goût du dépassement de soi.",
       "card": {
         "image": "/images/passions/rando/montserrat_groupe.jpg",
         "description": "Découverte de Montserrat en Espagne avec l'équipe du laboratoire."
@@ -44,7 +44,7 @@
     
     {
       "title": "Cuisine",
-      "description": "La cuisine est un super terrain de jeu créatif. J'adore recevoir mes proches pour partager de bons moments. Plus jeune, j'aimais déjà tellement ça que je gérais des réseaux sociaux culinaires pour partager mes propres recettes. Aujourd'hui, j'adore tester des combinaisons originales et inventer des plats qui réussissent le pari d'être à la fois gourmands et sains (ou pas). Au bout du compte, ce que je préfère, c'est simplement faire plaisir et régaler une table.",
+      "description": "La cuisine est un super terrain de jeu créatif. J'adore recevoir mes proches pour partager de bons moments. Plus jeune, je gérais des réseaux sociaux culinaires pour partager mes propres recettes. Aujourd'hui, j'adore tester des combinaisons originales et inventer des plats qui réussissent le pari d'être à la fois gourmands et sains (ou pas). Au bout du compte, ce que je préfère, c'est simplement faire plaisir et régaler une table.",
        "card": {
         "image": "/images/passions/cuisine/twix.jpeg",
         "description": "Twix maison"
