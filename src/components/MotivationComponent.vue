@@ -5,16 +5,28 @@
             <h1 class="text-3xl font-bold mb-4 text-center text-textPrimary">
                 {{ motivationData.title }}
             </h1>
-
+            <div class="flex justify-center">
+                <a href="/lettre_motivation.pdf" download="lettre_motivation.pdf"
+                    class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline shadow-sm transition w-fit">
+                    Télécharger la lettre (PDF)
+                </a>
+            </div>
             <p class="text-lg mb-6 text-left text-textSecondary">
                 {{ motivationData.greeting }}
             </p>
 
-            <div v-if="motivationData.video" class="flex justify-center mb-6">
-                <video class="rounded-lg shadow-md" controls width="640" height="360">
-                    <source :src="videoLink" type="video/mp4" />
-                </video>
-            </div>
+           <div v-if="motivationData.video" class="flex justify-center mb-6">
+              <iframe
+                  width="640"
+                  height="360"
+                  :src="youtubeEmbedUrl"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  class="rounded-lg shadow-md"
+              ></iframe>
+          </div>
 
             <div class="text-textSecondary justified">
                 <p
@@ -56,20 +68,26 @@ export default {
     },
 
     computed: {
-        videoLink() {
-            return `${import.meta.env.VITE_APP_BACKEND_URL}/api/video?name=${this.motivationData.video}`;
-        }
-    },
+     youtubeEmbedUrl() {
+      try {
+          const id = new URL(this.motivationData.video)
+              .searchParams.get("v");
 
+          return `https://www.youtube.com/embed/${id}`;
+      } catch {
+          return "";
+      }
+  }
+    },
     mounted() {
-        axios
-            .get(`${import.meta.env.VITE_APP_BACKEND_URL}/health`)
-            .then(response => {
-                this.backendAvailable = response.status === 200;
-            })
-            .catch(() => {
-                this.backendAvailable = false;
-            });
+      axios
+        .get(`${import.meta.env.VITE_APP_BACKEND_URL}/health`)
+        .then(response => {
+          this.backendAvailable = response.status === 200;
+        })
+        .catch(() => {
+          this.backendAvailable = false;
+        });
     }
-};
+  };
 </script>
