@@ -6,7 +6,7 @@
                 {{ motivationData.title }}
             </h1>
             <div class="flex justify-center">
-                <a href="/lettre_motivation.pdf" download="lettre_motivation.pdf"
+                <a href="/lettre_motivation_Manolo_BoucardBocciarelli.pdf" download="lettre_motivation_Manolo_BoucardBocciarelli.pdf"
                     class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline shadow-sm transition w-fit">
                     Télécharger la lettre (PDF)
                 </a>

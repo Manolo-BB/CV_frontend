@@ -16,6 +16,6 @@ export default defineConfig({
     },
   },
   server: {
-    allowedHosts: ['cv-marius-boucard-bocciarelli.duckdns.org', 'cv-front.web.svc.cluster.local'], // Add your allowed hosts here
+    allowedHosts: ['cv-manolo-boucard-bocciarelli.duckdns.org', 'cv-front.web.svc.cluster.local'], // Add your allowed hosts here
   },
 })
