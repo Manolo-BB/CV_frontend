@@ -2,10 +2,10 @@
     <div class="relative w-full  mx-auto">
         <!-- Carousel Container -->
         <div class="flex items-center justify-center overflow-hidden relative h-64">
-            <div v-for="(image, index) in images" :key="index" class="absolute aspect-w-1 aspect-h-1 w-48 transition-transform duration-500"
-                :style="getImageStyle(index)">
-                <img :src="image" alt="Carousel Image" class="w-full h-full object-cover rounded-lg shadow-md" />
-            </div>
+            <div
+              v-for="(image, index) in images" :key="index" class="absolute aspect-w-1 aspect-h-1 w-48 transition-transform duration-500" :style="getImageStyle(index)"   @mouseenter="startHover(index)" @mouseleave="stopHover">
+              <img :src="image" alt="Carousel Image" class="w-full h-full object-cover rounded-lg shadow-md"/>
+          </div>
         </div>
 
         <!-- Navigation Buttons -->
@@ -41,9 +41,26 @@ export default {
     data() {
         return {
             activeIndex: 0,
+            hoverTimer: null,
         };
     },
     methods: {
+        startHover(index) {
+            this.hoverTimer = setTimeout(() => {
+                const offset = index - this.activeIndex;
+
+                if (offset === -1 || offset === this.images.length - 1) {
+                    this.prevSlide();
+                }
+
+                if (offset === 1 || offset === -(this.images.length - 1)) {
+                    this.nextSlide();
+                }
+            }, 300);
+        },
+        stopHover() {
+            clearTimeout(this.hoverTimer);
+        },
         prevSlide() {
             this.activeIndex =
                 (this.activeIndex - 1 + this.images.length) % this.images.length;

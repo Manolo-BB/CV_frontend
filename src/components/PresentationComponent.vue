@@ -23,32 +23,25 @@
                     </a>
                 </div>
 
-                <!--Niveaux en langues -->
-                <div class="flex flex-col gap-2 w-full sm:w-auto bg-white p-3 rounded-lg shadow-sm border border-gray-100 min-w-[200px]">
-                    <p class="text-sm font-semibold text-gray-500 text-center sm:text-left mb-1">Compétences linguistiques :</p>
+                <!-- Compétences linguistiques -->
+                <div class="flex flex-col gap-2 w-full sm:w-auto bg-white p-3 rounded-lg shadow-sm border border-gray-100 min-w-[250px]">
+                    <p class="text-sm font-semibold text-gray-500 mb-1">
+                        Compétences linguistiques :
+                    </p>
 
-                    <div class="flex items-center justify-between gap-4 px-2 py-1 bg-gray-50 rounded">
-                        <span class="flex items-center gap-2 text-base">
-                            <span class="text-xl">🇫🇷</span>
-                            <span class="font-medium text-gray-700">Français</span>
-                        </span>
-                        <span class="text-xs bg-green-100 text-green-800 font-bold px-2 py-0.5 rounded-full">Langue maternelle</span>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">🇫🇷</span>
+                        <span><strong>Français</strong> : Langue maternelle</span>
                     </div>
 
-                    <div class="flex items-center justify-between gap-4 px-2 py-1 bg-gray-50 rounded">
-                        <span class="flex items-center gap-2 text-base">
-                            <span class="text-xl">🇬🇧</span>
-                            <span class="font-medium text-gray-700">Anglais</span>
-                        </span>
-                        <span class="text-xs bg-blue-100 text-blue-800 font-bold px-2 py-0.5 rounded-full">Score TOEIC : 930/990</span>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">🇬🇧</span>
+                        <span><strong>Anglais</strong> : TOEIC 930/990</span>
                     </div>
 
-                    <div class="flex items-center justify-between gap-4 px-2 py-1 bg-gray-50 rounded">
-                        <span class="flex items-center gap-2 text-base">
-                            <span class="text-xl">🇪🇸</span>
-                            <span class="font-medium text-gray-700">Espagnol</span>
-                        </span>
-                        <span class="text-xs bg-yellow-100 text-yellow-700 font-bold px-2 py-0.5 rounded-full">Niveau Intermédiaire</span>
+                    <div class="flex items-center gap-2">
+                        <span class="text-xl">🇪🇸</span>
+                        <span><strong>Espagnol</strong> : Niveau intermédiaire</span>
                     </div>
                 </div>
 

@@ -154,8 +154,8 @@ export default {
 }
 
 .social-icon {
-  width: 164px;
-  height: 164px;
+  width: 64px;
+  height: 64px;
   object-fit: contain;
 }
 
