@@ -19,7 +19,7 @@
         </div>
 
         <div>
-            <div v-for="(project, index) in filteredProjects" :key="index"
+            <div v-for="project in filteredProjects" :key="project.id"
                 class="bg-backgroundComp shadow-md rounded-lg m-auto mb-6 p-6 transition-all duration-300 w-4/5 rootComp flex flex-col md:flex-row">
 
                 <div class="flex-[2] flex flex-col justify-between">
@@ -44,7 +44,7 @@
                     </div>
 
                     <div class="flex justify-center md:justify-start mt-6">
-                        <button @click="toggleDetails(index)" class="text-blue-500 hover:underline font-semibold flex items-center gap-1">
+                        <button @click="toggleDetails(project)" class="text-blue-500 hover:underline font-semibold flex items-center gap-1">
                             <span>{{ project.showDetails ? "Cacher les détails" : "Lire la suite des détails" }}</span>
                             <span>{{ project.showDetails ? "↑" : "↓" }}</span>
                         </button>
@@ -120,6 +120,10 @@ export default {
         Card3DComponent,
     },
     data() {
+      projects: projectsData.projects.map(project => ({
+    ...project,
+    showDetails: false
+}))
         return {
             selectedTechnology: null,
             projects: projectsData.projects,
@@ -142,27 +146,33 @@ export default {
                 project.technologies.includes(this.selectedTechnology)
             );
         },
-        markdownToHtml() {
-            return (details) => {
-                this.markdown = details;
-                marked.setOptions({
-                    gfm: true,
-                    breaks: true,
-                    sanitize: true,
-                });
-                return marked(details);
-            }
-        },
     },
     methods: {
         filterByTechnology(tech) {
-            this.selectedTechnology = tech;
+          this.projects.forEach(project => {
+              project.showDetails = false;
+          });
+          this.selectedTechnology = tech;
         },
         clearFilter() {
+            this.projects.forEach(project => {
+                project.showDetails = false;
+            });
             this.selectedTechnology = null;
         },
-        toggleDetails(index) {
-            this.projects[index].showDetails = !this.projects[index].showDetails;
+        toggleDetails(projectToToggle) {
+            const shouldOpen = !projectToToggle.showDetails;
+            this.projects.forEach(project => {
+                project.showDetails = false;
+            });
+            projectToToggle.showDetails = shouldOpen;
+        },
+        markdownToHtml(details) {
+            marked.setOptions({
+                gfm: true,
+                breaks: true
+            });
+            return marked(details);
         },
         // NETTOYAGE DU MARKDOWN POUR L'EXTRAIT DE TEXTE
         getMarkdownSnippet(markdownText) {
@@ -181,7 +191,7 @@ export default {
 </script>
 
 <style scoped>
-:deep() {
+:deep(.prose) {
     text-align: justify;
 }
 

@@ -1,6 +1,7 @@
 {
   "projects": [
     {
+      "id": 1,
       "title": "Cv en ligne",
       "date": "2026",
       "shortDescription": "Ce projet que vous consultez à été réalisé afin de développer mes compétences en programmation WEB.",
@@ -21,6 +22,7 @@
       ]
     },
     {
+      "id": 2,
       "title": "BeeWatch",
       "date": "2025-2026",
       "shortDescription": "Développement d'un système de surveillance de ruches à distance",
@@ -36,6 +38,7 @@
       "github": ["https://github.com/Manolo-BB/3D_models/tree/main/BeeWatch"]
     },
     {
+      "id": 3,
       "title": "Asservissement moteur basé sur le SAMD21",
       "date": "2025",
       "shortDescription": "Ce projet vise à développer mes compétences en programmation de périphériques de microcontrôleur",
@@ -54,6 +57,7 @@
       }
     },
     {
+      "id": 4,
       "title": "Console de salon rétro",
       "date": "2025",
       "shortDescription": "Ce projet vise à valoriser un vieil ordinateur obsolète",
@@ -72,6 +76,7 @@
       "github": ["https://github.com/Manolo-BB/3D_models/tree/main/game%20controller"]
       },
     {
+      "id": 5,
       "title": "Nextcloud",
       "date": "2024-2025",
       "shortDescription": "Infrastructure hebergée sur un raspberry pi.",
@@ -90,6 +95,7 @@
       }
     },
     {
+      "id": 6,
       "title": "Design d’un récepteur de trames LIN",
       "date": "2025",
       "shortDescription": "Conception et simulation d’un récepteur de trames LIN",
@@ -104,6 +110,7 @@
       }
     },
      {
+      "id": 7,
       "title": "Modulation/Demodulation AM/FM",
       "date": "2025",
       "shortDescription": "Réalisation d'un système de modulation et démodulation en amplitude (AM) et en fréquence (FM)",
@@ -118,6 +125,7 @@
       }
     },
     {
+      "id": 8,
       "title": "Filtrage HF en lignes microruban",
       "date": "2026",
       "shortDescription": "Réalisation d'un filtre passe bande en ligne microruban pour des applications RF",
@@ -132,6 +140,7 @@
       }
     },
     {
+      "id": 9,
       "title": "Robot autonome",
       "date": "2024",
       "shortDescription": "Réalisation d'un robot capable de sortir d'un labyrinthe en autonomie",
@@ -144,6 +153,7 @@
       }
     },
     {
+      "id": 10,
       "title": "Ô'tomate",
       "date": "2023-2024",
       "shortDescription": "Réalisation d'un potager vertical autonome",
@@ -164,6 +174,7 @@
     },
 
     {
+      "id": 11,
       "title": "Modélisation et Impression 3D",
       "shortDescription": "Conception et impression de modèles 3D pour des objets personnalisés.",
       "details": "À travers différents projets personnels, j’ai exploré la modélisation et l’impression 3D. J’utilise la modélisation paramétrique sur **FreeCAD** pour concevoir des pièces modulables, allant du prototypage rapide au remplacement de pièces mécaniques. L'exploitation au quotidien de ma **Creality Ender 3 S1** m'a permis d'acquérir une bonne compréhension des variables d'impression. En jouant sur les profils de tranchage, les températures et les motifs de remplissage, je cherche le compromis idéal entre esthétique, résistance mécanique et économie de matière.",
