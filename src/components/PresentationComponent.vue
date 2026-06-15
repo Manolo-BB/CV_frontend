@@ -67,7 +67,7 @@
                         <div class="flex flex-col md:flex-row items-center flex-grow w-full">
                             <!-- Title and Job Section -->
                             <div class="flex flex-col flex-grow text-center md:text-left">
-                                <h2 class="text-lg font-bold text-gray-800 truncate">
+                                <h2 class="text-lg font-bold text-gray-800">
                                     {{ experience.compagnyName }}
                                 </h2>
                                 <p class="text-sm text-white mt-2">

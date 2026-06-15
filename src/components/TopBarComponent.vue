@@ -2,7 +2,7 @@
   <div class="topbar bg-primary">
     <div class="flex profile-container">
 
-      <img src="@/assets/images/profilPicture.jpg" alt="Profile Picture" class="profile-pic" />
+      <img src="@/assets/images/profilePicture.png" alt="Profile Picture" class="profile-pic" />
 
       <div class="profile">
         <div class="profile-info">
@@ -39,7 +39,7 @@
       <router-link to="/cv"
         class="bubble bg-secondaryButton text-white hover:bg-primaryButton">CV</router-link>
       <router-link to="/projets"
-        class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Projects</router-link>
+        class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Projets</router-link>
       <router-link to="/passions"
         class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Passions</router-link>
     </div>
