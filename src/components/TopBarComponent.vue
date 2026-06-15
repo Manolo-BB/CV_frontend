@@ -38,7 +38,7 @@
         class="bubble text-white">Motivations</router-link>
       <router-link to="/cv"
         class="bubble bg-secondaryButton text-white hover:bg-primaryButton">CV</router-link>
-      <router-link to="/projects"
+      <router-link to="/projets"
         class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Projects</router-link>
       <router-link to="/passions"
         class="bubble bg-secondaryButton text-white hover:bg-primaryButton">Passions</router-link>

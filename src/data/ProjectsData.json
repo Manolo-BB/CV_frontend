@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Cv en ligne",
       "date": "2026",
-      "shortDescription": "Ce projet que vous consultez à été réalisé afin de développer mes compétences en programmation WEB.",
+      "shortDescription": "Ce projet que vous consultez a été réalisé afin de développer mes compétences en programmation WEB.",
       "details": "Conception et développement d'un CV en ligne et portfolio numérique, pensé comme une vitrine pour centraliser et valoriser mes projets d'ingénierie. L'application a été entièrement développée avec le framework **Vue.js**, en exploitant l'architecture par composants pour garantir une **interface dynamique**, fluide et sans rechargement de page (Single Page Application). Le design et l'ergonomie ont été réalisés grâce à **Tailwind CSS**, permettant d'assurer une compatibilité totale et un affichage adaptatif (responsive) sur tous types d'écrans (ordinateurs, tablettes, smartphones).\n\nCe projet m’a permis de :\n -Maîtriser le développement Front-End, en structurant une application web \n -Conteneuriser une application web avec Docker pour isoler l'application et garantir la reproductibilité de l'environnement de développement\n -Piloter le déploiement en production (Nginx)",
      "showDetails": false,
       "detailImages": [
@@ -180,7 +180,7 @@
       "details": "À travers différents projets personnels, j’ai exploré la modélisation et l’impression 3D. J’utilise la modélisation paramétrique sur **FreeCAD** pour concevoir des pièces modulables, allant du prototypage rapide au remplacement de pièces mécaniques. L'exploitation au quotidien de ma **Creality Ender 3 S1** m'a permis d'acquérir une bonne compréhension des variables d'impression. En jouant sur les profils de tranchage, les températures et les motifs de remplissage, je cherche le compromis idéal entre esthétique, résistance mécanique et économie de matière.",
       "card": {
         "image": "/images/projets/lunettes.png",
-        "description": "Lunettes de marionette"
+        "description": "Lunettes de marionnette"
       },
       "technologies": ["FreeCad", "Cura", "CrealityPrint"],
       "detailImages": [

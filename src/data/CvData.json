@@ -23,7 +23,7 @@
     },
     {
       "compagnyName": "Sound Héritage",
-      "details": "Stage de 2 mois réalisé durant l’été 2025 chez **Sound Heritage**, une entreprise de réparation de produits audio vintage (enceintes, amplificateurs, tourne-disques...). L’objectif du stage était de concevoir des produits afin d’étendre leur offre d’occasion à des produits neufs de leur conception. J’ai notamment pu réaliser une **alimentation à fréquence variable** avec interface graphique et rétro-ingénierer et améliorer un **préamplificateur**. J’ai également pu proposer un protocole de test systématique et automatique du matériel en sortie de réparation, protocole réalisé avec le logiciel **Room EQ Wizard**.\n\n",
+      "details": "Stage de 2 mois réalisé durant l’été 2025 chez **Sound Heritage**, une entreprise de réparation de produits audio vintage (enceintes, amplificateurs, tourne-disques...). L’objectif du stage était de concevoir de nouveaux produits, l'entreprise souhaitant étendre son offre à de l'équipement neuf. J’ai notamment pu réaliser une **alimentation à fréquence variable** avec interface graphique et rétro-ingénierer et améliorer un **préamplificateur**. J’ai également pu proposer un protocole de test systématique et automatique du matériel en sortie de réparation, protocole réalisé avec le logiciel **Room EQ Wizard**.\n\n",
       "pictureDescription": "Ce stage m’a permis de :\n* -Concevoir des produits analogiques fonctionnels\n* -Faire de la rétro-ingénierie et de l’analyse de schémas et de montages électroniques\n* -Participer à toutes les étapes de conception d’un produit (du besoin à la solution en passant par le sourcing des composants)",
       "detailsTitle": "Conception de produits audios analogiques",
       "job": "Stage",
@@ -63,7 +63,7 @@
     },
     {
       "compagnyName": "Polytech Nantes",
-      "details": "J'ai effectué mes deux années de classe préparatoire intégrée à **Polytech Nantes**. Ce parcours m'a apporté un bagage scientifique solide, mais a surtout marqué le point de départ de mon intérêt pour l'électronique. Le véritable déclic s'est produit lors d'un projet de groupe : la conception d'un **robot mobile** programmé pour s'extraire d'un labyrinthe en autonomie. Cette première immersion, alliant matériel et programmation, a été décisive dans le choix de ma spécialisation.\n\nDans la continuité de cette première expérience, j'ai pris en charge la dimension électronique du projet **ô'tomate**, un potager vertical autonome. Responsable de la conception des circuits, du dimensionnement et de l'intégration des capteurs, j'ai pu concrétiser mon attrait pour les systèmes embarqués. Ce projet, mêlant électronique et développement logiciel, a définitivement conforté mon choix de parcours en me permettant de piloter une architecture matérielle complète.",
+      "details": "J'ai effectué mes deux années de classe préparatoire intégrée à **Polytech Nantes**. Ce parcours m'a apporté un bagage scientifique solide, mais a surtout marqué le point de départ de mon intérêt pour l'électronique. Le véritable déclic s'est produit lors d'un projet de groupe : la conception d'un **robot mobile** programmé pour s'extraire d'un labyrinthe en autonomie. Cette première immersion, alliant matériel et programmation, a été décisive dans le choix de ma spécialisation.\n\nDans la continuité de cette première expérience, j'ai pris en charge la dimension électronique du projet **ô'tomate**, un potager vertical autonome. Responsable de la conception des circuits, du dimensionnement et de l'intégration des capteurs, j'ai pu confirmer mon intérêt pour les systèmes embarqués. Ce projet, mêlant électronique et développement logiciel, a définitivement conforté mon choix de parcours en me permettant de piloter une architecture matérielle complète.",
       "job": "Etudiant",
       "pictureDescription": "",
       "detailsTitle": "Classe préparatoire intégrée",
@@ -78,7 +78,7 @@
     },
     {
       "compagnyName": "Lycée Bourdonnières",
-      "details": "Parcours scientifique au **Lycée Les Bourdonnières** à **Nantes**,spécialités **maths** et **physique-chimie**, option **maths expertes**.",
+      "details": "Parcours scientifique au **Lycée Les Bourdonnières** à **Nantes**, spécialités **maths** et **physique-chimie**, option **maths expertes**.",
       "job": "Etudiant",
       "detailsTitle": "Bac Scientifique",
       "technologyImage": "images/cv/bourdonnieres.jpg",
