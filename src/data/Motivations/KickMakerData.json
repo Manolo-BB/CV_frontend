@@ -1,0 +1,21 @@
+{
+  "title": "Lettre de motivation",
+  "greeting": "Chers membres de KickMaker,",
+  "video": "",
+  "signature": "Manolo Boucard Bocciarelli",
+  "paragraphs": [
+      "En cinquième année d’école d’ingénieur électronique à Polytech Nantes à la rentrée prochaine, je suis à la recherche d’un contrat de professionnalisation ou d’un stage de fin d’étude qui me permettra de mettre mes compétences en pratique tout en contribuant à des projets innovants.",
+
+      "Au cours de ma formation, j’ai développé un intérêt particulier pour la conception électronique et la transformation d’une idée en un système fonctionnel. Cette curiosité m’a conduit à m’investir dans des projets mêlant conception de cartes électroniques, développement embarqué et tests expérimentaux. Ma formation m’a permis d’acquérir une bonne maîtrise des outils de laboratoire (oscilloscopes, générateurs de fonctions, analyseurs logiques...) ainsi qu’une approche méthodique de validation et de caractérisation des systèmes électroniques. J’apprécie particulièrement les phases de prototypage et de tests, où la confrontation entre théorie, mesures et contraintes réelles permet de faire évoluer un produit jusqu’à une solution fiable et industrialisable. L’approche de Kickmaker, qui accompagne des projets innovants des premières phases de conception jusqu’au passage en production, correspond particulièrement à ma manière d’appréhender l’ingénierie : innover, expérimenter, comprendre les problématiques techniques et collaborer avec des profils variés pour donner vie à des produits. ",
+
+      "Mon stage de troisième année m’a permis de concevoir des produits audio analogiques, notamment une alimentation à fréquence variable et un préamplificateur, en participant à l’ensemble du processus, de la définition des exigences à la construction et aux tests de prototypes. Cette expérience m’a confronté à des contraintes de conception réelles, telles que la gestion du bruit dans les signaux audio de faible puissance, ou encore la maîtrise des courants d’appel et des transitoires lors de l’allumage et de l’extinction des appareils. Mon stage de 4ème année en laboratoire de recherche en Espagne m’a permis de découvrir le monde de la recherche en milieu international, me permettant ainsi de contribuer à la conception hardware d’un système de commande d’onduleur électrique. ",
+
+      "Passionné d’électronique, j’ai mené à bien de nombreux projets universitaires et personnels qui ont renforcé mes compétences techniques, mon autonomie et ma capacité d’organisation. J’ai notamment contribué à la conception d’un système de surveillance des ruches, construit et programmé un robot autonome, ainsi que réalisé un asservissement moteur en programmant les périphériques du microcontrôleur SAMD21. Je pratique également le home labbing (électronique, informatique et impression 3D), une activité qui nourrit ma curiosité technique et ma capacité à apprendre de manière autonome. Ces expériences m’ont appris à travailler avec rigueur, à structurer un projet et à maintenir un haut niveau d’exigence dans les résultats obtenus. Elles ont également développé mon goût pour le travail en équipe, que j’entretiens à travers mon investissement associatif au sein du Bureau des Sports de Polytech Nantes et de l’équipe de basket de l’école. Curieux, motivé et organisé, je cherche constamment à approfondir mes connaissances tout en mettant mes compétences au service des projets auxquels je participe.",
+
+      "Je souhaite rejoindre votre équipe afin de contribuer au développement de nouvelles technologies. Pour plus d'informations, j'ai créé ce CV web regroupant mon parcours et les différents projets que j'ai pu mener. ",
+
+      "Je suis convaincu que rejoindre votre équipe serait une excellente occasion d'apprendre et d'évoluer, et je suis tout à fait prêt à m'investir pour contribuer activement à vos projets. Je suis disponible pour un entretien au cours duquel je pourrais démontrer ma motivation.",
+
+      "Je vous prie d’agréer, Membres de KickMaker, l’expression de mes salutations distinguées."
+    ]
+}

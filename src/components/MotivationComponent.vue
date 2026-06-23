@@ -6,7 +6,7 @@
                 {{ motivationData.title }}
             </h1>
             <div class="flex justify-center">
-                <a href="/lettre_motivation_Manolo_BoucardBocciarelli.pdf" download="lettre_motivation_Manolo_BoucardBocciarelli.pdf"
+                <a :href="pdfLink" :download="pdfFileName"
                     class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline shadow-sm transition w-fit">
                     Télécharger la lettre (PDF)
                 </a>
@@ -54,19 +54,30 @@
 }
 </style>
 <script>
-import axios from "axios";
-import motivationData from "../data/MotivationData.json";
+import microchip from "@/data/Motivations/MicrochipData.json";
+import kickmaker from "@/data/Motivations/KickMakerData.json";
+import defaultLetter from "@/data/Motivations/default.json";
 
 export default {
     name: "MotivationComponent",
 
     data() {
         return {
-            backendAvailable: false,
-            motivationData
+            currentCompany: "default",
+            motivationData: defaultLetter
         };
     },
+    methods: {
+      loadLetter(company) {
+          const letters = {
+              microchip,
+              kickmaker
+          };
 
+          this.motivationData =
+              letters[company] ?? defaultLetter;
+      }
+    },
     computed: {
      youtubeEmbedUrl() {
       try {
@@ -74,20 +85,33 @@ export default {
               .searchParams.get("v");
 
           return `https://www.youtube.com/embed/${id}`;
-      } catch {
-          return "";
-      }
-  }
+          } catch {
+              return "";
+          }
+      },
+    pdfFileName() {
+        return `lettre_motivation_Manolo_BoucardBocciarelli_${this.currentCompany}.pdf`;
+    },
+
+    pdfLink() {
+        return `/motivations/${this.pdfFileName}`;
+    }
     },
     mounted() {
-      axios
-        .get(`${import.meta.env.VITE_APP_BACKEND_URL}/health`)
-        .then(response => {
-          this.backendAvailable = response.status === 200;
-        })
-        .catch(() => {
-          this.backendAvailable = false;
-        });
+        const companyFromUrl =
+        this.$route.query.company?.toLowerCase();
+
+        const company =
+            companyFromUrl ||
+            localStorage.getItem("company") ||
+            "default";
+
+        this.currentCompany = company;
+
+        localStorage.setItem("company", company);
+
+        this.loadLetter(company);
     }
   };
+
 </script>
