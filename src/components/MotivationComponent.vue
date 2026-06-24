@@ -89,13 +89,17 @@ export default {
               return "";
           }
       },
-    pdfFileName() {
-        return `lettre_motivation_Manolo_BoucardBocciarelli_${this.currentCompany}.pdf`;
-    },
+      pdfFileName() {
+        console.log("motivationData :", this.motivationData);
+        console.log("pdf :", this.motivationData.pdf);
 
-    pdfLink() {
-        return `/motivations/${this.pdfFileName}`;
-    }
+        return this.motivationData.pdf;
+      },
+      pdfLink() {
+              const link = `/motivations/${this.pdfFileName}`;
+            console.log("Lien généré :", link);
+          return link;
+      }
     },
     mounted() {
         const companyFromUrl =
