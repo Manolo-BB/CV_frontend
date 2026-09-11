@@ -56,6 +56,8 @@
 <script>
 import microchip from "@/data/Motivations/MicrochipData.json";
 import kickmaker from "@/data/Motivations/KickMakerData.json";
+import tronico from "@/data/Motivations/TronicoData.json";
+import naonext from "@/data/Motivations/NaonextData.json";
 import defaultLetter from "@/data/Motivations/default.json";
 
 export default {
@@ -71,7 +73,9 @@ export default {
       loadLetter(company) {
           const letters = {
               microchip,
-              kickmaker
+              kickmaker,
+              tronico,
+              naonext
           };
 
           this.motivationData =
