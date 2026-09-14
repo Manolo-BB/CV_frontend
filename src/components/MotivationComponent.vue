@@ -58,6 +58,8 @@ import microchip from "@/data/Motivations/MicrochipData.json";
 import kickmaker from "@/data/Motivations/KickMakerData.json";
 import tronico from "@/data/Motivations/TronicoData.json";
 import naonext from "@/data/Motivations/NaonextData.json";
+import fdi_urmet from "@/data/Motivations/FDIData.json";
+import cgwireless from "@/data/Motivations/CGWirelessData.json";
 import defaultLetter from "@/data/Motivations/default.json";
 
 export default {
@@ -75,7 +77,9 @@ export default {
               microchip,
               kickmaker,
               tronico,
-              naonext
+              naonext,
+              fdi_urmet,
+              cgwireless
           };
 
           this.motivationData =
