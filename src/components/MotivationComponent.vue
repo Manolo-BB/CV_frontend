@@ -60,6 +60,8 @@ import tronico from "@/data/Motivations/TronicoData.json";
 import naonext from "@/data/Motivations/NaonextData.json";
 import fdi_urmet from "@/data/Motivations/FDIData.json";
 import cgwireless from "@/data/Motivations/CGWirelessData.json";
+import selva from "@/data/Motivations/SelvaData.json";
+import lacroix from "@/data/Motivations/LacroixData.json";
 import defaultLetter from "@/data/Motivations/default.json";
 
 export default {
@@ -79,7 +81,9 @@ export default {
               tronico,
               naonext,
               fdi_urmet,
-              cgwireless
+              cgwireless,
+              selva,
+              lacroix
           };
 
           this.motivationData =
