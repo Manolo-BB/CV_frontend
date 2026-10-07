@@ -13,11 +13,11 @@
             <div class="flex flex-col sm:flex-row items-center justify-between gap-6 w-full mb-8 bg-gray-50 p-4 rounded-xl border border-gray-100">
                 <div class="flex flex-col gap-3 w-full sm:w-auto min-w-[150px]">
                     <p class="text-sm font-semibold text-gray-500 text-center sm:text-left mb-1">Télécharger mon CV :</p>
-                    <a href="/CV_Manolo_FR.pdf" download="CV_Manolo_FR.pdf"
+                    <a href="/CV_MANOLO_FR.pdf" download="CV_Manolo_FR.pdf"
                         class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline shadow-sm transition">
                         Version Française
                     </a>
-                    <a href="/CV_Manolo_EN.pdf" download="CV_Manolo_EN.pdf"
+                    <a href="/CV_MANOLO_EN.pdf" download="CV_Manolo_EN.pdf"
                         class="bg-primaryButton hover:bg-secondaryButton text-white font-bold py-2 px-4 rounded text-center no-underline shadow-sm transition">
                         English Version
                     </a>
