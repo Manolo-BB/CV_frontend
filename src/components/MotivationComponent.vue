@@ -119,12 +119,12 @@ export default {
 
         const company =
             companyFromUrl ||
-            localStorage.getItem("company") ||
+            sessionStorage.getItem("company") ||
             "default";
 
         this.currentCompany = company;
 
-        localStorage.setItem("company", company);
+        sessionStorage.setItem("company", company);
 
         this.loadLetter(company);
     }
