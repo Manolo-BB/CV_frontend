@@ -62,6 +62,7 @@ import fdi_urmet from "@/data/Motivations/FDIData.json";
 import cgwireless from "@/data/Motivations/CGWirelessData.json";
 import selva from "@/data/Motivations/SelvaData.json";
 import lacroix from "@/data/Motivations/LacroixData.json";
+import groupeatlantic from "@/data/Motivations/GroupeAtlanticData.json";
 import defaultLetter from "@/data/Motivations/default.json";
 
 export default {
@@ -83,7 +84,8 @@ export default {
               fdi_urmet,
               cgwireless,
               selva,
-              lacroix
+              lacroix,
+              groupeatlantic
           };
 
           this.motivationData =
