@@ -63,6 +63,7 @@ import cgwireless from "@/data/Motivations/CGWirelessData.json";
 import selva from "@/data/Motivations/SelvaData.json";
 import lacroix from "@/data/Motivations/LacroixData.json";
 import groupeatlantic from "@/data/Motivations/GroupeAtlanticData.json";
+import thales from "@/data/Motivations/ThalesData.json";
 import defaultLetter from "@/data/Motivations/default.json";
 
 export default {
@@ -85,7 +86,8 @@ export default {
               cgwireless,
               selva,
               lacroix,
-              groupeatlantic
+              groupeatlantic,
+              thales
           };
 
           this.motivationData =
